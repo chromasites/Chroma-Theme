@@ -18,6 +18,9 @@ require get_template_directory() . '/inc/functions/extras.php';
 // Custom template tags.
 require get_template_directory() . '/inc/functions/template-tags.php';
 
+// Chroma Sites admin branding.
+require get_template_directory() . '/inc/functions/branding.php';
+
 // ACF settings.
 require get_template_directory() . '/inc/acf/acf-setup.php';
 
@@ -26,10 +29,12 @@ require get_template_directory() . '/inc/customizer/customizer.php';
 
 /**
  * Implement the Custom Header feature.
- */
-require get_template_directory() . '/inc/custom-header.php';
+ *
+ * require get_template_directory() . '/inc/custom-header.php';
+*/
 
 /**
  * Load Jetpack compatibility file.
- */
-require get_template_directory() . '/inc/jetpack.php';
+ *
+ * require get_template_directory() . '/inc/jetpack.php';
+*/

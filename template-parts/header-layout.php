@@ -1,6 +1,6 @@
 <?php
 /**
- * Promo Bar.
+ * Header Layout.
  *
  * @package Chroma_Theme
  */
@@ -26,10 +26,10 @@
 			endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'chroma' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
+		<?php get_template_part('template-parts/social', 'icons'); ?>
 
 	</div>
+
+	<?php get_template_part( 'template-parts/navigation', 'primary' ); ?>
+
 </header><!-- #header -->

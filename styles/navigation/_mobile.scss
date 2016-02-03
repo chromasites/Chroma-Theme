@@ -1,0 +1,10 @@
+.show-mobile-menu {
+	.desktop-menu {display: none;}
+	.mobile-menu {display: block;}
+}
+@media (min-width: $grid-float-breakpoint) {
+	.show-mobile-menu {
+		.desktop-menu {display: block;}
+		.mobile-menu {display: none;}
+	}
+}

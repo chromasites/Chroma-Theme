@@ -1,3 +1,11 @@
+<?php
+/**
+ * Social Icons.
+ *
+ * @package Chroma_Theme
+ */
+?>
+
 <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
 <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">

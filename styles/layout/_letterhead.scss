@@ -1,0 +1,16 @@
+/* Letterhead Layout */
+.letterhead #page-wrapper {
+	@media (min-width: $screen-md-min) {
+		width: $container-md + ($lh-border-width * 2);
+		background-color: $lh-background-color;
+		border: $lh-border-width solid $lh-border-color;
+		border-radius: $lh-border-radius;
+		margin-top: $lh-margin-top;
+		margin-bottom: $lh-margin-bottom;
+		box-shadow: $lh-box-shadow;
+		@include center-block;
+	}
+	@media (min-width: $screen-lg-min) {
+		width: $container-lg + ($lh-border-width * 2);
+	}
+}

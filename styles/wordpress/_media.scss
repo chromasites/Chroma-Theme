@@ -1,16 +1,27 @@
+// WordPress image alignment
 .alignleft {
 	display: inline;
 	float: left;
 	margin-right: 1.5em;
 }
-
 .alignright {
 	display: inline;
 	float: right;
 	margin-left: 1.5em;
 }
-
 .aligncenter {
 	clear: both;
 	@include center-block;
+}
+
+// Fit embeds and iframes in content
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+// Fit all images in content
+img {
+	@include img-responsive;
 }
