@@ -16,4 +16,16 @@
 require 'acf-wrapper-functions.php';
 
 
+// Options pages.
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Social Media Settings',
+		'menu_title'	=> 'Social Media',
+		'parent_slug'	=> 'options-general.php',
+	));
+	
+}
+
 // ACF default fields.
+require 'acf-social-media-fields.php';

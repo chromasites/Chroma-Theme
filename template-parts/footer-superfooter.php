@@ -1,6 +1,6 @@
 <?php
 /**
- * Promo Bar.
+ * Super Footer.
  *
  * @package Chroma_Theme
  */

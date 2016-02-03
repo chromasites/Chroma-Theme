@@ -44,5 +44,4 @@ get_header(); ?>
 	</section><!-- #search-results -->
 
 <?php
-get_sidebar();
 get_footer();
