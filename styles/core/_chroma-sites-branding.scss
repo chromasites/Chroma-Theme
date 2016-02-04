@@ -1,0 +1,21 @@
+// Chroma Sites logo backlink
+#chroma-sites-brand {
+	@include square($chroma-sites-brand-size);
+	@include center-block;
+	@include text-hide;
+	@include img-retina('images/chroma-sites-brand.png', 'images/chroma-sites-brand@2x.png', $chroma-sites-brand-size, ($chroma-sites-brand-size * 3));
+	background-repeat: no-repeat;
+	background-size: $chroma-sites-brand-size ($chroma-sites-brand-size * 3);
+	background-position: 0 (-$chroma-sites-brand-size);
+	margin-bottom: 50px;
+
+	&.dark {
+		background-position: 0 (-$chroma-sites-brand-size * 2);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-position: 0 0;
+	}
+}
