@@ -3432,27 +3432,15 @@ img.wp-smiley, img.emoji { display: inline !important; border: none !important; 
 /*
 # Social Media
 «»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
-.social-icons { list-style-type: none; text-align: center; margin: 0; padding: 0; }
+.social-icons { text-align: center; list-style-type: none; margin: 0; padding: 0; }
 
 .social-icons:before, .social-icons:after { content: " "; display: table; }
 
 .social-icons:after { clear: both; }
 
-.social-icons li { display: inline-block; margin: 0; padding: 0; }
+.social-icons > li { display: inline-block; }
 
-.social-icons li a { display: block; float: left; }
-
-.social-icons .socicon { width: 48px; height: 48px; display: block; font-size: 21px; line-height: 48px; text-align: center; }
-
-.social-icons .sociname { display: none; }
-
-.social-icons.squares a { border-radius: 0%; }
-
-.social-icons.hard-corners a { border-radius: 5%; }
-
-.social-icons.soft-corners a { border-radius: 12.5%; }
-
-.social-icons.circles a, #footer .social-icons a { border-radius: 50%; }
+.social-icons > li > a { display: block; float: left; border-radius: 5%; }
 
 .social-icons .facebook a { background-color: #3B5998; color: #fff; }
 
@@ -3534,6 +3522,10 @@ img.wp-smiley, img.emoji { display: inline !important; border: none !important; 
 
 .social-icons .custom3 a:hover, .social-icons .custom3 a:focus, .social-icons .custom3 a:active { background-color: #fff; color: #333; }
 
+.socicon { width: 48px; height: 48px; display: block; font-size: 21px; line-height: 48px; text-align: center; }
+
+.sociname { display: none; }
+
 /*
 # Sidebar
 «»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
@@ -3542,17 +3534,19 @@ img.wp-smiley, img.emoji { display: inline !important; border: none !important; 
 «»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
 #footer { background-color: #fff; padding: 15px 0; }
 
-#footer .social-icons li { margin: 15px 5px; }
+#footer .social-icons { text-align: center; }
 
-#footer .social-icons a { background-color: #333; }
+#footer .social-icons li { margin-left: 5px; margin-right: 5px; }
 
-#footer .social-icons .socicon { width: 40px; height: 40px; font-size: 12px; line-height: 40px; }
+#footer .social-icons a { border-radius: 50%; }
+
+#footer .socicon { width: 60px; height: 60px; font-size: 21px; line-height: 60px; }
 
 #footer .search { max-width: 300px; display: block; margin-left: auto; margin-right: auto; }
 
-#footer .search input { box-shadow: inset 0 1px 3px #cccccc; background-color: #f2f2f2; border-color: white; }
+#footer .search input { box-shadow: inset 0 1px 2px #bfbfbf; background-color: #f2f2f2; border-color: white; border-top-color: #d9d9d9; }
 
-#footer .search button { background-color: white; border-color: #f2f2f2; }
+#footer .search button { background-color: white; border-color: #f2f2f2; border-bottom-color: #d9d9d9; }
 
 .footer-nav { list-style-type: none; margin: 0; padding: 0; text-align: center; }
 

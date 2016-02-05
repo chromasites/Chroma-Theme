@@ -3,6 +3,7 @@ $social_icon_size: 48px;
 $social_icon_font_size: 21px;
 $social_icon_contrast: #fff;
 $social_icon_hover_bg: $social_icon_contrast;
+$social_icon_border_radius: 5%; // 0 squares, 5% hard corners, 12.5% soft corners, 50% circles
 
 
 // Social media brand colors
@@ -28,41 +29,19 @@ $social_brand_custom2:		#333 !default;
 $social_brand_custom3:		#333 !default;
 
 .social-icons {
-	list-style-type: none;
 	text-align: center;
-	margin: 0;
-	padding: 0;
+	@include list-clean;
 	@include clearfix;
 
-	li {
+	> li {
 		display: inline-block;
-		margin: 0;
-		padding: 0;
 
-		a {
+		> a {
 			display: block;
 			float: left;
+			border-radius: $social_icon_border_radius;
 		}
 	}
-
-	.socicon {
-			@include square($social_icon_size);
-			display: block;
-			font-size: $social_icon_font_size;
-			line-height: $social_icon_size;
-			text-align: center;
-		}
-		
-		.sociname { display: none; }
-
-	// Social Icon Shapes
-	&.squares a { border-radius: 0%; }
-	&.hard-corners a { border-radius: 5%; }
-	&.soft-corners a { border-radius: 12.5%; }
-	&.circles a { border-radius: 50%; }
-
-	// Social Icon Alignment
-	&.left {}
 
 	$socicons:(
 		(facebook, $social_brand_facebook),
@@ -86,18 +65,25 @@ $social_brand_custom3:		#333 !default;
 		(custom2, $social_brand_custom2),
 		(custom3, $social_brand_custom3)
 	);
-	@mixin socicon_colors($icon_bg, $icon_color) {
-		background-color: $icon_bg;
-		color: $icon_color;
-	}
 	@each $icon, $color in $socicons {
 		.#{$icon} a {
-			@include socicon_colors(#{$color}, $social_icon_contrast);
+			background-color: #{$color};
+			color: $social_icon_contrast;
 
 			&:hover, &:focus, &:active {
-				@include socicon_colors($social_icon_hover_bg, #{$color});
+				background-color: $social_icon_contrast;
+				color: #{$color};
 			}
 		}
-
 	}
 }
+
+.socicon {
+		@include square($social_icon_size);
+		display: block;
+		font-size: $social_icon_font_size;
+		line-height: $social_icon_size;
+		text-align: center;
+	}
+	
+.sociname { display: none; }
