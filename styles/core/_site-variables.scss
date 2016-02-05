@@ -1,0 +1,38 @@
+
+
+// Font Families
+$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif;
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+
+// Mobile Menu Breakpoint
+$grid-float-breakpoint: 992px; // 768px, 992px, 1200px
+
+// Sidebar width
+$sidebar_col_width: 4; // in columns
+
+// Link hover decoration.
+$link-hover-decoration: underline; // underline, none
+
+// Chroma Sites logo size (in footer)
+$chroma-sites-brand-size: 64px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Import project theme file
+@import "../theme";
+

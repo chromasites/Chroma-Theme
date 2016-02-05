@@ -1,4 +1,13 @@
-/* Letterhead Layout */
+// Letterhead Variables
+$lh-background-color: #fff;
+$lh-box-shadow: 0 2px 5px rgba(0,0,0,.25);
+$lh-border-color: #eee;
+$lh-border-width: 0px;
+$lh-border-radius: 4px;
+$lh-margin-top: 20px;
+$lh-margin-bottom: 20px;
+
+// Letterhead Layout
 .letterhead #page-wrapper {
 	@media (min-width: $screen-md-min) {
 		width: $container-md + ($lh-border-width * 2);
