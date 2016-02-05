@@ -3,3 +3,33 @@
 	font-size: ($sizeValue * 16) * 1px;
 	font-size: $sizeValue * 1rem;
 }
+
+// Remove list style type, margin and padding from UL & OL and child li
+@mixin list-clean() {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+// Style Social Icons: @include in #section and or #section > @media
+@mixin social-icons-style($radius: 5%, $size: 48px, $iconsize: 24px, $align: center, $marginsleft: 0, $marginsright: $marginsleft ) {
+	.social-icons {
+		text-align: $align;
+
+		li {
+			margin-left: $marginsleft;
+			margin-right: $marginsright;
+		}
+
+		a {
+			border-radius: $radius;
+		}
+	}
+
+	.socicon {
+		@include square($size);
+		font-size: $iconsize;
+		line-height: $size;
+	}
+}
+
