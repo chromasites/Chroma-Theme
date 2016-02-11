@@ -14,7 +14,7 @@ $wp_customize->add_section( 'layout_customizer' , array(
 // Layout style.
 $wp_customize->add_setting( 'chroma_layout' );
 $wp_customize->add_control(
-	'cs_layout',
+	'chroma_layout',
 	array(
     	'type'		=> 'radio',
     	'label'		=> __( 'Layout Style', 'chroma' ),

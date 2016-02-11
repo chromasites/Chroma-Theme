@@ -25,5 +25,7 @@ function chroma_customize_register( $wp_customize ) {
 	require 'customizer-header.php';
 	require 'customizer-footer.php';
 
+	// Require additional customizer functions.
+
 }
 add_action( 'customize_register', 'chroma_customize_register' );
