@@ -1,1 +1,24 @@
 // Header
+.site-header {
+	@extend %centered-header-layout;
+	// %standard-header-layout; %centered-header-layout; %float-header-layout
+}
+
+.site-logo a {
+	@include center-block;
+	max-width: 360px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.site-info {
+	text-align: center;
+}
+
+.site-info-1 {
+		
+}
+
+.site-info-2 {
+	
+}

@@ -6,19 +6,21 @@
  */
 ?>
 
-<header id="header" class="site-header standard-header-layout" role="banner">
+<header id="header" class="site-header centered-header-layout" role="banner">
 	<div class="container">
 		<div class="row">
 
 			<?php get_template_part('template-parts/header', 'logo'); ?>
 
-			<div id="site-info-1" class="site-info">
+			<div class="layout-break"></div>
+
+			<div class="site-info site-info-1">
 				Site Info 1
 			</div>
 
-			<div id="site-info-2" class="site-info">
+			<div class="site-info site-info-2">
 				Site Info 2
-				<?php get_template_part('template-parts/social', 'icons'); ?>
+				<?php // get_template_part('template-parts/social', 'icons'); ?>
 			</div>
 
 		</div>

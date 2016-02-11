@@ -7,9 +7,6 @@
 
 if (has_nav_menu( 'mobile' )) { $show_mobile_menu = 'show-mobile-menu'; } ?>
 
-<nav class="navbar chroma-navbar <?php echo $show_mobile_menu;?>" role="navigation">
-	<div class="container">
-	<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
 				<span class="sr-only">Toggle navigation</span>
@@ -18,10 +15,10 @@ if (has_nav_menu( 'mobile' )) { $show_mobile_menu = 'show-mobile-menu'; } ?>
 				<span class="icon-bar bottom-bar"></span>
 			</button>
 			<a class="navbar-brand" href="<?php echo home_url(); ?>">
-				<?php bloginfo('name'); ?>
+				<span class="fa fa-home"></span>
 			</a>
 		</div>
-		<div id="navbar-collapse" class="collapse navbar-collapse">
+		<div id="navbar-collapse" class="collapse navbar-collapse <?php echo $show_mobile_menu;?>">
 		<?php
 		// Output navigation through Bootstrap navwalker.
 		wp_nav_menu( array(
@@ -41,5 +38,3 @@ if (has_nav_menu( 'mobile' )) { $show_mobile_menu = 'show-mobile-menu'; } ?>
 		);
 		?>
 		</div>
-	</div>
-</nav>
