@@ -7,8 +7,9 @@
 
 get_header(); ?>
 
+<div id="blog-post" class="right-sidebar">
 
-	<div id="blog-post" class="container">
+	<div class="container">
 		<div class="row">
 		
 			<main id="main" class="site-main" role="main">
@@ -33,6 +34,8 @@ get_header(); ?>
 			<?php get_sidebar(); ?>
 
 		</div><!-- .row -->
-	</div><!-- #blog-post -->
+	</div>
+
+</div><!-- #blog-post -->
 
 <?php get_footer();

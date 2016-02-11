@@ -1,13 +1,13 @@
 <?php
 /**
- * The template for displaying all pages.
+ * Template Name: No Sidebar
  *
  * @package Chroma_Theme
  */
 
 get_header(); ?>
 
-<div id="page" class="right-sidebar">
+<div id="page" class="no-sidebar <?php _the_field('content_column_width'); echo ' '; _the_field('content_column_align'); ?>" >
 
 	<?php get_template_part('template-parts/titles', 'page'); ?>
 
@@ -25,8 +25,6 @@ get_header(); ?>
 				?>
 
 			</main><!-- #main -->
-			
-			<?php get_sidebar(); ?>
 
 		</div><!-- .row -->
 	</div>
