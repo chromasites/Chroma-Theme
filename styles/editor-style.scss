@@ -1,0 +1,11 @@
+/* Editor Style */
+
+body#tinymce.wp-editor{
+	@import "core/site-variables";
+	@import "core/bootstrap-resources";
+	@import "core/mixins/mixins-master";
+
+	@import "core/bootstrap-components";
+	@import "../bower_components/font-awesome/scss/font-awesome";
+	@import "typography";
+}
