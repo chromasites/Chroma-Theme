@@ -7,7 +7,7 @@
 
 // Chroma Sites login branding.
 function chroma_login_branding() {
-    echo '<style type="text/css">h1 a { background-image:url('.get_bloginfo('template_directory').'/images/chromasites-login-logo.png) !important; }</style>';
+    echo '<style type="text/css">h1 a { background-image:url('.get_bloginfo('template_directory').'/images/login-logo.png) !important; }</style>';
 }
 add_action('login_head', 'chroma_login_branding');
 
@@ -33,7 +33,7 @@ add_action( 'wp_before_admin_bar_render', 'chroma_adminbar_branding', 999 );
 if ( ! function_exists( 'chroma_designer_branding' ) ) :
 function chroma_designer_branding($logo_tint = 'dark') {
 	$anchor_text = 'Business Website Design by Chroma Sites';
-	$title_text = 'Like this website? Click here to see how you can get a great website from Chroma Sites too!';
+	$title_text = 'Like this website? Click here to see how you can get a great website from Chroma Sites for your business!';
 	echo '<a id="chroma-sites-brand" href="http://www.chromasites.com/" title="'.$title_text.'" target="_blank" class="'.$logo_tint.'" rel="designer">'.$anchor_text.'</a>';
 }
 endif;
