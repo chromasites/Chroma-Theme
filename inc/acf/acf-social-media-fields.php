@@ -5,3 +5,4 @@
  * @package Chroma_Theme
  */
 
+// Export as template from samplesass

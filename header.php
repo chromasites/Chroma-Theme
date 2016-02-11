@@ -27,8 +27,8 @@
 
 <a class="skip-link sr-only" href="#main"><?php esc_html_e( 'Skip to content', 'chroma' ); ?></a>
 
-<?php get_template_part( 'template-parts/header', 'promobar' ); ?>
+<?php // get_template_part( 'template-parts/header', 'promobar' ); ?>
 
-<?php get_template_part( 'template-parts/header', 'layout' ); ?>
+<?php get_template_part( 'template-parts/header-layout', 'centered' ); // standard, centered, float, compact ?>
 
 <div id="main-content" class="">

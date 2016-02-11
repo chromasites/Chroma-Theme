@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages.
+ * Template Name: Blog Post Format
  *
  * @package Chroma_Theme
  */
@@ -9,12 +9,16 @@ get_header(); ?>
 
 <div id="page" class="right-sidebar">
 
-	<?php get_template_part('template-parts/titles', 'page'); ?>
-
 	<div class="container">
 		<div class="row">
 		
 			<main id="main" class="site-main" role="main">
+
+				<h1 class="entry-title"><?php the_title(); ?></h1>
+
+				<div class="entry-meta">
+					<?php chroma_posted_on(); ?>
+				</div><!-- .entry-meta -->
 
 				<?php
 				while ( have_posts() ) : the_post();

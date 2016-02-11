@@ -66,12 +66,13 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 /*
 # Layout
 «»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
-@import "core/layout-base";
+@import "core/layouts-base";
 @import "core/page-layouts";
 
 /*
 # Header
 «»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
+@import "core/header-base";
 @import "header";
 @import "promo";
 

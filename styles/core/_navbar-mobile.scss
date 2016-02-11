@@ -1,3 +1,4 @@
+// Display alternate mobile menu when available
 .show-mobile-menu {
 	.desktop-menu {display: none;}
 	.mobile-menu {display: block;}
@@ -6,5 +7,12 @@
 	.show-mobile-menu {
 		.desktop-menu {display: block;}
 		.mobile-menu {display: none;}
+	}
+}
+
+// Hide navbar brand except on mobile
+@media (min-width: $grid-float-breakpoint) {
+	.navbar-brand {
+		display: none;
 	}
 }

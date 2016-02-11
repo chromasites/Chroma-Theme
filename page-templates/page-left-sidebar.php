@@ -1,13 +1,13 @@
 <?php
 /**
- * The template for displaying all pages.
+ * Template Name: Lefthand Sidebar
  *
  * @package Chroma_Theme
  */
 
 get_header(); ?>
 
-<div id="page" class="right-sidebar">
+<div id="page" class="left-sidebar">
 
 	<?php get_template_part('template-parts/titles', 'page'); ?>
 

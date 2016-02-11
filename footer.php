@@ -9,7 +9,7 @@
 
 </div><!-- #main -->
 
-<?php get_template_part( 'template-parts/footer', 'superfooter' ); ?>
+<?php // get_template_part( 'template-parts/footer', 'superfooter' ); ?>
 
 <?php get_template_part( 'template-parts/footer', 'layout' ); ?>
 

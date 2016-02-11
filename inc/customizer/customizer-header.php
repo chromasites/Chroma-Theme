@@ -18,7 +18,7 @@ $wp_customize->add_control(
        $wp_customize,
        'website_logo',
        array(
-           'label'      => __( 'Upload a logo.', 'chroma' ),
+           'label'      => __( 'Upload a Logo', 'chroma' ),
            'section'    => 'header_customizer',
            'settings'   => 'website_logo'
        )
