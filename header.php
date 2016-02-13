@@ -6,10 +6,12 @@
  */
 
 ?><!DOCTYPE html>
-<!--    ________________________________________________________
-        
-          Website Design by Chroma Sites - www.chromasites.com
-        ________________________________________________________
+<!--
+        * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+        *                                                                   *
+        *        Website Design by Chroma Sites - www.chromasites.com       *
+        *                                                                   *
+        * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 -->
 <html <?php language_attributes(); ?>>
 <head>

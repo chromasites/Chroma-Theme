@@ -25,15 +25,8 @@
 			<?php get_template_part('template-parts/social', 'icons'); ?>
 		</ul><!-- .social-icons -->
 
-		<div class="search">
-			<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
-				<div class="input-group input-group-sm">
-					<input id="search-input" type="text" class="form-control" placeholder="Search..." name="s">
-					<span class="input-group-btn">
-						<button class="btn btn-default" type="submit"><span class="fa fa-search"></span></button>
-					</span>
-				</div>
-			</form>
+		<div class="footer-search">
+			<?php get_search_form(); ?>
 		</div><!-- .search -->
 
 	</div>

@@ -1,1 +1,33 @@
 // Footer
+
+#footer {
+	background-color: $footer_bg;
+	padding: 15px 0;
+
+	@include social-icons-style( 50%, 48px, 20px, center, 5px);
+}
+
+.footer-menu,
+.footer .social-icons,
+.footer-search {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.footer-nav {
+
+	text-align: center;
+
+	a {
+		padding: 5px;
+	}
+}
+
+.footer-search {
+	max-width: 300px;
+}
+
+.copyright {
+	text-align: center;
+	margin: 15px 0;
+}
