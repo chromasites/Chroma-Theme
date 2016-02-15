@@ -1,4 +1,8 @@
 // Do not show the outline on the skip link target
+.screen-reader-text {
+	@extend .sr-only;
+}
+
 #main-content[tabindex="-1"]:focus {
 	outline: 0;
 }

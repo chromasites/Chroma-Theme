@@ -7,9 +7,11 @@
 
 get_header(); ?>
 
+<div id="blog-archive" class="right-sidebar">
+
 	<?php get_template_part('template-parts/titles', 'archive'); ?>
 
-	<div id="blog-archive" class="container">
+	<div class="container">
 		<div class="row">
 		
 			<main id="main" class="site-main" role="main">
@@ -43,6 +45,8 @@ get_header(); ?>
 			<?php get_sidebar(); ?>
 
 		</div><!-- .row -->
-	</div><!-- #blog-archive -->
+	</div>
+	
+</div><!-- #blog-archive -->
 
 <?php get_footer();

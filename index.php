@@ -7,21 +7,30 @@
 
 get_header(); ?>
 
-	<div id="blog-index" class="container">
+<div id="blog-index" class="right-sidebar">
+
+	<header class="page-header">
+		<div class="container">
+			<h1 class="page-title">
+				<?php if ( is_home() && ! is_front_page() && get_option('page_for_posts') ) {
+					$blog_page_id = get_option('page_for_posts');
+					echo get_page($blog_page_id)->post_title;
+				} elseif ( is_post_type_archive() ) {
+					echo post_type_archive_title();
+				} else {
+					the_archive_title();
+				} ?>
+			</h1>
+		</div>
+	</header><!-- .page-header -->
+
+	<div class="container">
 		<div class="row">
 		
 			<main id="main" class="site-main" role="main">
 
 			<?php
 			if ( have_posts() ) :
-
-				if ( is_home() && ! is_front_page() ) : ?>
-					<header>
-						<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-					</header>
-
-				<?php
-				endif;
 
 				/* Start the Loop */
 				while ( have_posts() ) : the_post();
@@ -48,6 +57,8 @@ get_header(); ?>
 			<?php get_sidebar(); ?>
 
 		</div><!-- .row -->
-	</div><!-- #blog-index -->
+	</div>
+
+</div><!-- #blog-index -->
 
 <?php get_footer();
