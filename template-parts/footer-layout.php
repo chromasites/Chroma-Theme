@@ -20,10 +20,7 @@
 			echo '</div><!-- .footer-menu -->'; 
 		} ?>
 
-
-		<ul class="social-icons">
-			<?php get_template_part('template-parts/social', 'icons'); ?>
-		</ul><!-- .social-icons -->
+		<?php get_template_part('template-parts/social', 'icons'); ?>
 
 		<div class="footer-search">
 			<?php get_search_form(); ?>

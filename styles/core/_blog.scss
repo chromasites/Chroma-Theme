@@ -1,0 +1,59 @@
+// Blog index and archive
+
+.nav-links {
+	@include clearfix;
+
+	a {
+		display: inline-block;
+		padding: 5px 14px;
+		background-color: $pager-bg;
+		border: 1px solid $pager-border;
+		border-radius: $pager-border-radius;
+	}
+
+	a:hover,
+	a:focus {
+		text-decoration: none;
+		background-color: $pager-hover-bg;
+	}
+
+	.nav-previous a {
+		float: right;
+	}
+
+	.nav-next a {
+		float: left;
+	}
+}
+
+.page-numbers {
+	@include list-clean;
+	color: #aaa;
+
+	li {
+		@include square(24px);
+		display: inline-block;
+		text-align: center;
+		margin-left: 10px;
+	}
+
+	li:first-child {
+		color: #333;
+		width: auto;
+		font-weight: bold;
+		margin-left: 0;
+	}
+
+	a {
+		display: block;
+		@include square(24px);
+		border-radius: 50%;
+	
+		&:hover,
+		&:focus {
+			background-color: $brand-primary;
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+}

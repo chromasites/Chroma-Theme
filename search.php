@@ -7,16 +7,22 @@
 
 get_header(); ?>
 
-	<div id="search-results" class="container">
+<div id="id="search-results"" class="">
+
+	<header class="page-header">
+		<div class="container">
+			<h1 class="page-title">
+				<?php printf( esc_html__( 'Search Results for: %s', 'chroma' ), '<span>' . get_search_query() . '</span>' ); ?>
+			</h1>
+		</div>
+	</header><!-- .page-header -->
+
+	<div class="container">
 
 		<main id="main" class="site-main" role="main">
 
 		<?php
 		if ( have_posts() ) : ?>
-
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'chroma' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-			</header><!-- .page-header -->
 
 			<?php
 			/* Start the Loop */
@@ -31,7 +37,10 @@ get_header(); ?>
 
 			endwhile;
 
-			the_posts_navigation();
+			the_posts_navigation( array(
+				'prev_text'          => __( 'More Results' ),
+				'next_text'          => __( 'Previous Results' ),
+		    ) );
 
 		else :
 
@@ -41,7 +50,9 @@ get_header(); ?>
 
 		</main><!-- #main -->
 		
-	</section><!-- #search-results -->
+	</div>
+
+</div><!-- #search-results -->
 
 <?php
 get_footer();

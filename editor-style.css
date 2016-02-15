@@ -220,7 +220,7 @@ body#tinymce.wp-editor {
     font-size: 10px;
     -webkit-tap-highlight-color: transparent; }
   body#tinymce.wp-editor body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.7142857143;
     color: #555;

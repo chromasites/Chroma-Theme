@@ -1,0 +1,132 @@
+// Social Sharing
+
+.social-share {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+	li {
+		display: inline-block;
+		margin-right: 5px;
+	}
+
+	a {
+		@extend .btn, .btn-sm;
+		@include gradient-vertical(#fff, #f5f5f5);
+		color: #777;
+		border-color: #ddd;
+		border-radius: 2px;
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: #fff;
+			@include remove-gradient;
+
+			.fa {
+				color: #fff;
+			}
+		}
+	}
+}
+
+.social-share .fa {
+	font-size: 1.2em;
+}
+
+.facebook-share {
+	a:hover,
+	a:focus,
+	a:active {
+		background-color: $social_brand_facebook;
+		border-color: $social_brand_facebook;
+	}
+
+	.fa {
+		color: $social_brand_facebook;
+	}
+}
+
+.twitter-share {
+	a:hover,
+	a:focus,
+	a:active {
+		background-color: $social_brand_twitter;
+		border-color: $social_brand_twitter;
+	}
+
+	.fa {
+		color: $social_brand_twitter;
+	}
+}
+
+.linkedin-share {
+	a:hover,
+	a:focus,
+	a:active {
+		background-color: $social_brand_linkedin;
+		border-color: $social_brand_linkedin;
+	}
+
+	.fa {
+		color: $social_brand_linkedin;
+	}
+}
+
+.google-share {
+	a:hover,
+	a:focus,
+	a:active {
+		background-color: $social_brand_google-plus;
+		border-color: $social_brand_google-plus;
+	}
+
+	.fa {
+		color: $social_brand_google-plus;
+	}
+}
+
+.pinterest-share {
+	a:hover,
+	a:focus,
+	a:active {
+		background-color: $social_brand_pinterest;
+		border-color: $social_brand_pinterest;
+	}
+
+	.fa {
+		color: $social_brand_pinterest;
+	}
+}
+
+.email-share {
+	a:hover,
+	a:focus,
+	a:active {
+		background-color: $social_brand_email;
+		border-color: $social_brand_email;
+	}
+
+	.fa {
+		color: $social_brand_email;
+	}
+}
+
+@media (min-width: 1440px) {
+	.social-share {
+		position: fixed;
+		top: 280px;
+		left: 20px;
+
+		li {
+			display: block;
+			margin-bottom: 15px;
+			margin-right: 0;
+		}
+
+		a {
+			display: block;
+			width: 100%;
+		}
+	}
+}

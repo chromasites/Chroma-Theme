@@ -17,7 +17,7 @@
 
 			wp_link_pages( array(
 				'next_or_number'   => 'number',
-				'before'      => '<ul class="page-numbers"><li>Page:</li><li>',
+				'before'      => '<ul class="page-numbers"><li class="legend">Page:</li><li>',
 				'separator'   => '</li><li>',
 				'after'       => '</li></ul>'
 			) );

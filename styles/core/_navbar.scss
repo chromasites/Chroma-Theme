@@ -1,14 +1,15 @@
 // Default navbar
 .chroma-navbar {
-  background-color: $navbar-default-bg;
-  border-color: $navbar-default-border;
+  background-color: $navbar-background-color;
+  // @include gradient-vertical($start-color: #fafafa,  $end-color: #ddd);
+  border-color: $navbar-border-color;
 
   .navbar-brand {
-    color: $navbar-default-brand-color;
+    color: $navbar-brand-color;
+    
     &:hover,
     &:focus {
-      color: $navbar-default-brand-hover-color;
-      background-color: $navbar-default-brand-hover-bg;
+      color: $navbar-brand-hover-color;
     }
   }
 
@@ -18,15 +19,35 @@
 
   .navbar-nav {
     > li > a {
-      color: $navbar-default-link-color;
+      color: $navbar-link-color;
+      background-color: $navbar-link-bg;
+      border-radius: $navbar-link-border-radius;
 
       &:hover,
       &:focus {
-        color: $navbar-default-link-hover-color;
-        background-color: $navbar-default-link-hover-bg;
+        color: $navbar-link-hover-color;
+        background-color: $navbar-link-hover-bg;
+      }
+
+      // Specs for buttons
+      @media (min-width: $screen-md-min) {
+        padding-right: $navbar-link-md-horizontal-padding;
+        padding-left: $navbar-link-md-horizontal-padding;
+        margin-top: $navbar-link-top-margin;
+        margin-right: $navbar-link-md-horizontal-margin;
+        margin-bottom: $navbar-link-bottom-margin;
+        margin-left: $navbar-link-md-horizontal-margin;
+      }
+
+      @media (min-width: $screen-lg-min) {
+        padding-right: $navbar-link-lg-horizontal-padding;
+        padding-left: $navbar-link-lg-horizontal-padding;
+        margin-right: $navbar-link-lg-horizontal-margin;
+        margin-left: $navbar-link-lg-horizontal-margin;
       }
     }
-    > .active > a {
+
+    /*> .active > a {
       &,
       &:hover,
       &:focus {
@@ -34,6 +55,7 @@
         background-color: $navbar-default-link-active-bg;
       }
     }
+
     > .disabled > a {
       &,
       &:hover,
@@ -41,23 +63,25 @@
         color: $navbar-default-link-disabled-color;
         background-color: $navbar-default-link-disabled-bg;
       }
-    }
+    }*/
   }
 
   .navbar-toggle {
-    border-color: $navbar-default-toggle-border-color;
+    border-color: $navbar-brand-color;
+
     &:hover,
     &:focus {
-      background-color: $navbar-default-toggle-hover-bg;
+      background-color: transparent;
     }
+
     .icon-bar {
-      background-color: $navbar-default-toggle-icon-bar-bg;
+      background-color: $navbar-brand-color;
     }
   }
 
   .navbar-collapse,
   .navbar-form {
-    border-color: $navbar-default-border;
+    border-color: darken($navbar-background-color, 10%);
   }
 
   // Dropdown menu items
