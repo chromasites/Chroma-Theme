@@ -45,11 +45,6 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 @import "core/bootstrap-components";
 
 /*
-# Font Awesome
-«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
-@import "../bower_components/font-awesome/scss/font-awesome";
-
-/*
 # WordPress
 «»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
 @import "core/wp-media.scss";
@@ -82,12 +77,12 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 @import "core/navbar";
 @import "core/navbar-mobile";
 @import "core/navbar-xtoggle";
-@import "nav";
 
 /*
 # Social Media
 «»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
 @import "core/social-icons";
+@import "core/social-share";
 
 /*
 # Sidebar
@@ -104,6 +99,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 /*
 # Blog
 «»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
+@import "core/blog";
 @import "core/post-layouts";
 @import "core/post-meta";
 @import "core/comments";
