@@ -34,16 +34,16 @@
         padding-right: $navbar-link-md-horizontal-padding;
         padding-left: $navbar-link-md-horizontal-padding;
         margin-top: $navbar-link-top-margin;
-        margin-right: $navbar-link-md-horizontal-margin;
+        margin-right: $navbar-link-md-right-margin;
         margin-bottom: $navbar-link-bottom-margin;
-        margin-left: $navbar-link-md-horizontal-margin;
+        margin-left: $navbar-link-md-left-margin;
       }
 
       @media (min-width: $screen-lg-min) {
         padding-right: $navbar-link-lg-horizontal-padding;
         padding-left: $navbar-link-lg-horizontal-padding;
-        margin-right: $navbar-link-lg-horizontal-margin;
-        margin-left: $navbar-link-lg-horizontal-margin;
+        margin-right: $navbar-link-lg-right-margin;
+        margin-left: $navbar-link-lg-left-margin
       }
     }
 

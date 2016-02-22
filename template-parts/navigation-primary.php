@@ -29,12 +29,14 @@ if (has_nav_menu( 'mobile' )) { $show_mobile_menu = 'show-mobile-menu'; } ?>
 			'walker'            => new wp_bootstrap_navwalker())
 		);
 		// Show different mobile navigation if available.
-		wp_nav_menu( array(
-			'theme_location'    => 'mobile',
-			'depth'             => 2,
-			'menu_class'        => 'nav navbar-nav mobile-menu',
-			'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-			'walker'            => new wp_bootstrap_navwalker())
-		);
+		if (has_nav_menu( 'mobile' )) {
+			wp_nav_menu( array(
+				'theme_location'    => 'mobile',
+				'depth'             => 2,
+				'menu_class'        => 'nav navbar-nav mobile-menu',
+				'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+				'walker'            => new wp_bootstrap_navwalker())
+			);
+		}
 		?>
 		</div>

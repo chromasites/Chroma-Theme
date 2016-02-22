@@ -127,14 +127,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "styles/_sidebar.scss",
-			"settings":
-			{
-				"buffer_size": 10,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -191,27 +183,22 @@
 	[
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/bower_components",
-		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/bower_components/bootstrap-sass",
-		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/bower_components/bootstrap-sass/assets",
-		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/bower_components/bootstrap-sass/assets/stylesheets",
-		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/bower_components/bootstrap-sass/assets/stylesheets/bootstrap",
-		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/functions",
-		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles",
-		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles/core",
-		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles/core/mixins",
-		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/template-parts"
+		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/page-templates"
 	],
 	"file_history":
 	[
+		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/functions/assets.php",
+		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/page-templates/page-custom-layout.php",
+		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/acf/acf-setup.php",
+		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/acf/acf-custom-page-template.php",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles/core/_navbar.scss",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles/core/_site-variables.scss",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles/_theme.scss",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles/style.scss",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles/_pages.scss",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss",
-		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/functions/assets.php",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/template-parts/navigation-primary.php",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles/core/_blog.scss",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles/_footer.scss",
@@ -296,7 +283,6 @@
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/template-parts/favicons.php",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/template-parts/social-icons.php",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/functions/setup.php",
-		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/acf/acf-setup.php",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles/navigation/_navigation.scss",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_image.scss",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles/layout/_layout.scss",
@@ -330,9 +316,7 @@
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/acf/acf-wrapper-functions.php",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/js/chromatheme.js",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/functions/acf-custom.php",
-		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/functions/customizer.php",
-		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/functions/template-tags.php",
-		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/functions/wp_bootstrap_navwalker.php"
+		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/functions/customizer.php"
 	],
 	"find":
 	{
@@ -351,6 +335,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"<?",
 			"navbar-vertical-align",
 			"$element-height",
 			"navbar-vertical-align",
@@ -453,88 +438,6 @@
 			"sheets":
 			[
 			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 0,
-					"file": "styles/_sidebar.scss",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 10,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								}
-							],
-							"color_helper.file_palette":
-							[
-							],
-							"color_helper.scan":
-							{
-								"allowed_colors":
-								[
-									"hex_compressed",
-									"hsl",
-									"hsla",
-									"hex",
-									"webcolors",
-									"rgba",
-									"rgb"
-								],
-								"compress_hex_output": true,
-								"current_ext": ".scss",
-								"current_syntax": "SCSS/SCSS",
-								"enabled": true,
-								"last_updated": 1455836267.88,
-								"scan_completion_scopes":
-								[
-									"source.scss -comment -string",
-									"source.sass -comment -string"
-								],
-								"scan_scopes":
-								[
-									"meta.property-list.css.sass -comment -string",
-									"constant.other.rgb-value.sass -comment -string",
-									"constant.other.color.rgb-value.scss -comment -string",
-									"constant.other.color.rgb-value.scss",
-									"support.constant.color.w3c-standard-color-name.scss",
-									"meta.property-value.scss",
-									"sass-script-maps -variable.other -comment -string"
-								],
-								"use_hex_argb": false
-							},
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
-			]
 		}
 	],
 	"incremental_find":
@@ -554,18 +457,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
@@ -629,7 +525,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
