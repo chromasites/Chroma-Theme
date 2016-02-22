@@ -68,8 +68,10 @@ $navbar-link-hover-bg:             $brand-primary;
 $navbar-link-md-horizontal-padding:   20px;
 $navbar-link-lg-horizontal-padding:   30px;
 
-$navbar-link-md-horizontal-margin:    5px;
-$navbar-link-lg-horizontal-margin:    10px;
+$navbar-link-md-right-margin:    5px;
+$navbar-link-md-left-margin:    0px;
+$navbar-link-lg-right-margin:    10px;
+$navbar-link-lg-left-margin:    0px;
 
 $navbar-link-top-margin:           5px;
 $navbar-link-bottom-margin:        $navbar-link-top-margin;

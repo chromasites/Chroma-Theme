@@ -8,11 +8,12 @@
 		.desktop-menu {display: block;}
 		.mobile-menu {display: none;}
 	}
-}
 
-// Hide navbar brand except on mobile
-@media (min-width: $grid-float-breakpoint) {
+	// Hide navbar brand except on mobile
 	.navbar-brand {
 		display: none;
+	}
+	#navbar-collapse {
+		margin-left: -$navbar-padding-horizontal;
 	}
 }
