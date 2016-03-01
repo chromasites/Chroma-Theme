@@ -10,6 +10,10 @@ $sidebar_col_width: 4; // in columns
 // Set width for #main
 $main_col_width: $grid-columns - $sidebar_col_width;
 
+#main {
+	@include make-md-column(12);
+}
+
 // Sidebar Layouts
 .right-sidebar {
 	#sidebar {
