@@ -1,0 +1,212 @@
+{
+    "key": "group_56b137fa41474",
+    "title": "Social Media Icons",
+    "fields": [
+        {
+            "key": "field_56b13dbe8977f",
+            "label": "Social Icon",
+            "name": "social_icons",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_56b13e4889780",
+            "min": "",
+            "max": "",
+            "layout": "block",
+            "button_label": "Add Social Icon",
+            "sub_fields": [
+                {
+                    "key": "field_56b13e4889780",
+                    "label": "Type",
+                    "name": "social_icon_type",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": 30,
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "facebook": "Facebook",
+                        "twitter": "Twitter",
+                        "google-plus": "Google+",
+                        "google": "Google",
+                        "linkedin": "LinkedIn",
+                        "youtube": "YouTube",
+                        "vimeo": "Vimeo",
+                        "instagram": "Instagram",
+                        "pinterest": "Pinterest",
+                        "tumblr": "Tumblr",
+                        "yelp": "Yelp",
+                        "foursquare": "Foursquare",
+                        "skype": "Skype",
+                        "rss": "RSS",
+                        "phone": "Phone",
+                        "directions": "Directions",
+                        "email": "Email",
+                        "custom1": "Custom #1",
+                        "custom2": "Custom #2",
+                        "custom3": "Custom #3"
+                    },
+                    "default_value": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "disabled": 0,
+                    "readonly": 0
+                },
+                {
+                    "key": "field_56b13ebb89781",
+                    "label": "Link",
+                    "name": "social_icon_link",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": 50,
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "http:\/\/linkto.com\/profile",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_56b13fb489782",
+                    "label": "_blank",
+                    "name": "social_icon_target",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": 20,
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 1
+                },
+                {
+                    "key": "field_56b1425e7c943",
+                    "label": "Icon Class",
+                    "name": "social_icon_custom_class",
+                    "type": "text",
+                    "instructions": "<a href=\"http:\/\/fontawesome.io\/icons\/\" target=\"_blank\">Choose Icons<\/a>",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_56b13e4889780",
+                                "operator": "==",
+                                "value": "custom1"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_56b13e4889780",
+                                "operator": "==",
+                                "value": "custom2"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_56b13e4889780",
+                                "operator": "==",
+                                "value": "custom3"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": 50,
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "fa-reddit-alien",
+                    "prepend": "&lt;span class=&quot;fa",
+                    "append": "&quot;&gt;&lt;\/span&gt;",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                },
+                {
+                    "key": "field_56b144271c761",
+                    "label": "Icon Name",
+                    "name": "social_icon_custom_name",
+                    "type": "text",
+                    "instructions": "Enter a name to display",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_56b13e4889780",
+                                "operator": "==",
+                                "value": "custom1"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_56b13e4889780",
+                                "operator": "==",
+                                "value": "custom2"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_56b13e4889780",
+                                "operator": "==",
+                                "value": "custom3"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": 50,
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Reddit",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-social-media"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1456792299
+}
