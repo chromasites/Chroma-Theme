@@ -49,8 +49,6 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 «»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
 @import "core/wp-media.scss";
 @import "core/wp-galleries.scss";
-@import "core/wp-captions.scss";
-@import "core/wp-emoji.scss";
 @import "core/accessibility.scss";
 
 /*
@@ -61,13 +59,13 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 /*
 # Layout
 «»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
+@import "core/letterhead";
 @import "core/layouts-base";
 @import "core/page-layouts";
 
 /*
 # Header
 «»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
-@import "core/header-base";
 @import "header";
 @import "promo";
 

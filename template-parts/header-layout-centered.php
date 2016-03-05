@@ -10,17 +10,19 @@
 	<div class="container">
 		<div class="row">
 
-			<?php get_template_part('template-parts/header', 'logo'); ?>
+			<div class="site-logo col-sm-6 col-sm-push-3 col-md-4 col-md-push-4">
+				<?php get_template_part('template-parts/header', 'logo'); ?>
+			</div>
 
-			<div class="layout-break"></div>
+			<div class="layout-break visible-sm-block clearfix"></div>
 
-			<div class="site-info site-info-1">
+			<div class="site-info site-info-1 col-sm-6 col-md-4 col-md-pull-4">
 				Site Info 1
 			</div>
 
-			<div class="site-info site-info-2">
+			<div class="site-info site-info-2 col-sm-6 col-md-4">
 				Site Info 2
-				<?php // get_template_part('template-parts/social', 'icons'); ?>
+				<?php get_template_part('template-parts/social', 'icons'); ?>
 			</div>
 
 		</div>
