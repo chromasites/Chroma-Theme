@@ -9,7 +9,9 @@
 
 </div><!-- #main -->
 
-<?php // get_template_part( 'template-parts/footer', 'superfooter' ); ?>
+<?php if( get_theme_mod( 'display_superfooter' ) == 'checked') {
+	get_template_part( 'template-parts/footer', 'superfooter' );
+} ?>
 
 <?php get_template_part( 'template-parts/footer', 'layout' ); ?>
 
@@ -17,10 +19,15 @@
 
 <div id="subfooter" class="container-fluid">
 	<div class="copyright">
-		&copy; <?php echo date("Y ");
-		if ( _get_field('copyright_name', 'options') ) { _the_field('copyright_name', 'options'); }
-		else { bloginfo('name'); } ?>
-		<span class="login"> <?php wp_loginout($_SERVER['REQUEST_URI']); ?></span>
+
+		<?php get_template_part( 'template-parts/footer', 'copyright' ); ?>
+
+		<?php if( get_theme_mod( 'hide_footer_loginlink' ) != 'checked') {
+			echo '<span class="login">';
+			wp_loginout($_SERVER['REQUEST_URI']);
+			echo '</span>';
+		} ?>
+
 	</div>
 </div>
 

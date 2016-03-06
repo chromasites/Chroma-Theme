@@ -38,9 +38,27 @@ add_action( 'after_setup_theme', 'chroma_setup' );
 // Sidebar registration.
 function chroma_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'chroma' ),
-		'id'            => 'sidebar-1',
-		'description'   => '',
+		'name'          => esc_html__( 'Main Sidebar', 'chroma' ),
+		'id'            => 'main-sidebar',
+		'description'   => 'These widgets appear on all pages and blog posts.',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Page Sidebar', 'chroma' ),
+		'id'            => 'pages-sidebar',
+		'description'   => 'These widgets appear only on pages, above widgets in the main sidebar.',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Blog Sidebar', 'chroma' ),
+		'id'            => 'posts-sidebar',
+		'description'   => 'These widgets appear only on blog posts, above widgets in the main sidebar.',
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h4 class="widget-title">',

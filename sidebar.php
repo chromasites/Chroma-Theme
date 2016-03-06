@@ -5,11 +5,25 @@
  * @package Chroma_Theme
  */
 
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+if ( ! is_active_sidebar( 'main-sidebar' ) ) {
 	return;
 }
 ?>
 
 <aside id="sidebar" class="widget-area" role="complementary">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
+	<?php
+
+	if ( is_page() ) {
+
+		dynamic_sidebar( 'pages-sidebar' ); // Display pages sidebar only on pages
+
+	} else {
+
+		dynamic_sidebar( 'posts-sidebar' ); // Display blog sidebar everywhere else (inlcudes custom post types)
+
+	}
+
+	dynamic_sidebar( 'main-sidebar' ); // Display main sidebar everywhere
+
+	 ?>
 </aside><!-- #sidebar -->
