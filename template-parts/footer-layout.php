@@ -18,13 +18,17 @@
 				'menu_class'        => 'footer-nav')
 			);
 			echo '</div><!-- .footer-menu -->'; 
+		} 
+
+		if( get_theme_mod( 'hide_footer_socicons' ) != 'checked') {
+			get_template_part('template-parts/social', 'icons');
+		}
+
+		if( get_theme_mod( 'hide_footer_search' ) != 'checked') {
+			echo '<div class="footer-search">';
+			get_search_form();
+			echo '</div>';
 		} ?>
-
-		<?php get_template_part('template-parts/social', 'icons'); ?>
-
-		<div class="footer-search">
-			<?php get_search_form(); ?>
-		</div><!-- .search -->
 
 	</div>
 </footer><!-- #footer -->

@@ -1,7 +1,8 @@
-// Blog index and archive
+// Post and page navigation links.
 
 .nav-links {
 	@include clearfix;
+	margin: 1em 0;
 
 	a {
 		display: inline-block;
@@ -28,6 +29,7 @@
 
 .page-numbers {
 	@include list-clean;
+	margin: 1em 0;
 	color: #aaa;
 
 	li {

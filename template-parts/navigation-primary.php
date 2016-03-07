@@ -8,35 +8,44 @@
 if (has_nav_menu( 'mobile' )) { $show_mobile_menu = 'show-mobile-menu'; } ?>
 
 		<div class="navbar-header">
+
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
 				<span class="sr-only">Toggle navigation</span>
 				<span class="icon-bar top-bar"></span>
 				<span class="icon-bar middle-bar"></span>
 				<span class="icon-bar bottom-bar"></span>
 			</button>
-			<a class="navbar-brand" href="<?php echo home_url(); ?>">
-				<span class="fa fa-home"></span>
-			</a>
+			
+			<?php if (get_theme_mod('header_layout') == 'compact') {
+				// Add logo to navbar for compact header layout
+				get_template_part('template-parts/header', 'logo');
+			} else { ?>
+				<a class="navbar-brand" href="<?php echo home_url(); ?>">
+					<span class="fa fa-home"></span>
+				</a>
+			<?php } ?>
+
 		</div>
+		
 		<div id="navbar-collapse" class="collapse navbar-collapse <?php echo $show_mobile_menu;?>">
-		<?php
-		// Output navigation through Bootstrap navwalker.
-		wp_nav_menu( array(
-			'theme_location'    => 'primary',
-			'depth'             => 2,
-			'menu_class'        => 'nav navbar-nav desktop-menu',
-			'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-			'walker'            => new wp_bootstrap_navwalker())
-		);
-		// Show different mobile navigation if available.
-		if (has_nav_menu( 'mobile' )) {
+			<?php
+			// Output navigation through Bootstrap navwalker.
 			wp_nav_menu( array(
-				'theme_location'    => 'mobile',
+				'theme_location'    => 'primary',
 				'depth'             => 2,
-				'menu_class'        => 'nav navbar-nav mobile-menu',
+				'menu_class'        => 'nav navbar-nav desktop-menu',
 				'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
 				'walker'            => new wp_bootstrap_navwalker())
 			);
-		}
-		?>
+			// Show different mobile navigation if available.
+			if (has_nav_menu( 'mobile' )) {
+				wp_nav_menu( array(
+					'theme_location'    => 'mobile',
+					'depth'             => 2,
+					'menu_class'        => 'nav navbar-nav mobile-menu',
+					'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+					'walker'            => new wp_bootstrap_navwalker())
+				);
+			}
+			?>
 		</div>

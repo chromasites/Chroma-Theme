@@ -1,8 +1,4 @@
 // Header
-.site-header {
-	@extend %centered-header-layout;
-	// %standard-header-layout; %centered-header-layout; %float-header-layout
-}
 
 .site-logo a {
 	@include center-block;
@@ -21,4 +17,16 @@
 
 .site-info-2 {
 	
+}
+
+.compact-header-layout .brand-link {
+	@extend .navbar-brand;
+	display: inline !important;
+    height: $navbar-height + $navbar-link-bottom-margin + $navbar-link-bottom-margin;
+
+	img {
+		max-height: 100%;
+		width: auto;
+	}
+
 }

@@ -6,28 +6,26 @@
  */
 ?>
 
-<header id="header" class="site-header standard-header-layout" role="banner">
-	<div class="container">
-		<div class="row">
+<?php
+	if (get_theme_mod('header_layout') == 'compact') {
 
-			<?php get_template_part('template-parts/header', 'logo'); ?>
+		get_template_part( 'template-parts/header-layout', 'compact' );
 
-			<div id="site-info-1" class="site-info">
-				Site Info 1
-			</div>
+	} elseif (get_theme_mod('header_layout') == 'centered') {
 
-			<div id="site-info-2" class="site-info">
-				Site Info 2
-				<?php get_template_part('template-parts/social', 'icons'); ?>
-			</div>
+		get_template_part( 'template-parts/header-layout', 'centered' );
 
-		</div>
-	</div>
+	} elseif (get_theme_mod('header_layout') == 'float') {
 
-	<nav class="navbar chroma-navbar" role="navigation">
-		<div class="container">
-			<?php get_template_part( 'template-parts/navigation', 'primary' ); ?>
-		</div>
-	</nav>
-	
-</header><!-- #header -->
+		get_template_part( 'template-parts/header-layout', 'float' );
+
+	} elseif (get_theme_mod('header_layout') == 'standard') {
+
+		get_template_part( 'template-parts/header-layout', 'standard' );
+
+	} else { // Set standard as default layout
+
+		get_template_part( 'template-parts/header-layout', 'standard' );
+
+	}
+?>

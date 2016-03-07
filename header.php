@@ -31,6 +31,6 @@
 
 <?php // get_template_part( 'template-parts/header', 'promobar' ); ?>
 
-<?php get_template_part( 'template-parts/header-layout', 'centered' ); // standard, centered, float, compact ?>
+<?php get_template_part( 'template-parts/header-layout' ); ?>
 
 <div id="main-content" class="">

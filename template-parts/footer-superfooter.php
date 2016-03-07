@@ -8,9 +8,21 @@
 ?>
 
 <div id="superfooter" class="">
-	<div class="container-fluid">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-sm-4">
+				
+			</div>
 		
-		Superfooter
+			<div class="col-sm-4">
+				
+			</div>
 
+			<div class="col-sm-4">
+				
+			</div>
+
+		</div>
 	</div>
 </div><!-- #promo-bar -->

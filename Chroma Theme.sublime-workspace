@@ -142,6 +142,22 @@
 				"buffer_size": 2685,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "styles/core/_page-layouts.scss",
+			"settings":
+			{
+				"buffer_size": 1169,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "inc/functions/template-tags.php",
+			"settings":
+			{
+				"buffer_size": 4102,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -208,6 +224,9 @@
 	],
 	"file_history":
 	[
+		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/sidebar.php",
+		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/functions/template-tags.php",
+		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/functions/setup.php",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/functions/assets.php",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/page-templates/page-custom-layout.php",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/acf/acf-setup.php",
@@ -301,7 +320,6 @@
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/template-parts/footer-superfooter.php",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/template-parts/favicons.php",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/template-parts/social-icons.php",
-		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/functions/setup.php",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles/navigation/_navigation.scss",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_image.scss",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles/layout/_layout.scss",
@@ -327,15 +345,13 @@
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles/wordpress/_emoji.scss",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles/wordpress/_alignments.scss",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles/modules/_accessibility.scss",
-		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/sidebar.php",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/template-parts/header-promobar.php",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/extras/favicons.php",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/customizer/customizer-footer.php",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/Chroma Theme.sublime-project",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/acf/acf-wrapper-functions.php",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/js/chromatheme.js",
-		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/functions/acf-custom.php",
-		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/functions/customizer.php"
+		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/functions/acf-custom.php"
 	],
 	"find":
 	{
@@ -454,7 +470,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -480,6 +496,14 @@
 							[
 								{
 									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
 									"selector": "text.html"
 								},
 								{
@@ -535,7 +559,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -566,6 +590,68 @@
 								{
 									"characters": ".#",
 									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.scan":
+							{
+								"current_ext": ".php",
+								"current_syntax": "PHP/PHP",
+								"enabled": false,
+								"last_updated": 1456423645.16
+							},
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "styles/core/_page-layouts.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1169,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								230,
+								230
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
 								}
 							],
 							"color_helper.file_palette":
@@ -575,19 +661,96 @@
 							{
 								"allowed_colors":
 								[
-									"hsl",
-									"rgb",
 									"rgba",
-									"hex",
-									"hsla",
 									"webcolors",
-									"hex_compressed"
+									"rgb",
+									"hex",
+									"hex_compressed",
+									"hsl",
+									"hsla"
+								],
+								"compress_hex_output": true,
+								"current_ext": ".scss",
+								"current_syntax": "SCSS/SCSS",
+								"enabled": true,
+								"last_updated": 1456950340.71,
+								"scan_completion_scopes":
+								[
+									"source.scss -comment -string",
+									"source.sass -comment -string"
+								],
+								"scan_scopes":
+								[
+									"meta.property-list.css.sass -comment -string",
+									"constant.other.rgb-value.sass -comment -string",
+									"constant.other.color.rgb-value.scss -comment -string",
+									"constant.other.color.rgb-value.scss",
+									"support.constant.color.w3c-standard-color-name.scss",
+									"meta.property-value.scss",
+									"sass-script-maps -variable.other -comment -string"
+								],
+								"use_hex_argb": false
+							},
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 19.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "inc/functions/template-tags.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4102,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4102,
+								4102
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.scan":
+							{
+								"allowed_colors":
+								[
+									"rgba",
+									"webcolors",
+									"rgb",
+									"hex",
+									"hex_compressed",
+									"hsl",
+									"hsla"
 								],
 								"compress_hex_output": true,
 								"current_ext": ".php",
 								"current_syntax": "PHP/PHP",
 								"enabled": true,
-								"last_updated": 1456244405.38,
+								"last_updated": 1456950340.71,
 								"scan_completion_scopes":
 								[
 								],
@@ -600,11 +763,10 @@
 								],
 								"use_hex_argb": false
 							},
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1653.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

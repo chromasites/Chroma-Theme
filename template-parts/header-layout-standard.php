@@ -10,15 +10,16 @@
 	<div class="container">
 		<div class="row">
 
-			<?php get_template_part('template-parts/header', 'logo'); ?>
+			<div class="site-logo col-md-4">
+				<?php get_template_part('template-parts/header', 'logo'); ?>
+			</div>
 
-			<div class="site-info site-info-1">
+			<div class="site-info site-info-1 col-sm-8 col-md-4">
 				Site Info 1
 			</div>
 
-			<div class="site-info site-info-2">
-				Site Info 2
-				<?php // get_template_part('template-parts/social', 'icons'); ?>
+			<div class="site-info site-info-2 col-sm-8 col-md-4">
+				<?php get_template_part('template-parts/social', 'icons'); ?>
 			</div>
 
 		</div>

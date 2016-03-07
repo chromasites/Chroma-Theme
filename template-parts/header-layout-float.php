@@ -10,21 +10,23 @@
 	<div class="container">
 		<div class="row">
 
-			<?php get_template_part('template-parts/header', 'logo'); ?>
+			<div class="site-logo col-sm-4">
+				<?php get_template_part('template-parts/header', 'logo'); ?>
+			</div>
 
-			<div class="header-space">
+			<div class="header-space col-sm-8">
 				<div class="row">
 
-					<div class="site-info site-info-1">
+					<div class="site-info site-info-1 col-sm-6">
 						Site Info 1
 					</div>
 
-					<div class="site-info site-info-2">
+					<div class="site-info site-info-2 col-sm-6">
 						Site Info 2
-						<?php // get_template_part('template-parts/social', 'icons'); ?>
+						<?php get_template_part('template-parts/social', 'icons'); ?>
 					</div>
 
-					<div class="layout-break"></div>
+					<div class="layout-break clearfix"></div>
 					
 					<nav class="navbar chroma-navbar" role="navigation">
 						<?php get_template_part( 'template-parts/navigation', 'primary' ); ?>
