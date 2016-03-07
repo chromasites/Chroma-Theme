@@ -14,8 +14,10 @@
 
 %centered-header-layout {
 	.site-logo {
-		@include make-sm-column(4);
-		@include make-sm-column-push(4);
+		@include make-sm-column(6);
+		@include make-sm-column-push(3);
+		@include make-md-column(4);
+		@include make-md-column-push(4);
 	}
 	.site-info-1 {
 		@include make-sm-column(6);

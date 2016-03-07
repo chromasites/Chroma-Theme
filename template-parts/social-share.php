@@ -21,14 +21,15 @@ $emailshare      =  'mailto:?&subject=' . $emailsubject . '&body=' . $pagetitle 
 
 
 // Get display options from ACF options page
-$selected = _get_field('hide_social_share_buttons', 'options');
-if( in_array('hide-facebook', $selected) ) $hidefacebook = true;
-if( in_array('hide-twitter', $selected) ) $hidetwitter = true;
-if( in_array('hide-linkedin', $selected) ) $hidelinkedin = true;
-if( in_array('hide-google', $selected) ) $hidegoogle = true;
-if( in_array('hide-pinterest', $selected) ) $hidepinterest = true;
-if( in_array('hide-email', $selected) ) $hideemail = true;
-
+if (_get_field('hide_social_share_buttons', 'options')) {
+	$selected = _get_field('hide_social_share_buttons', 'options');
+	if( in_array('hide-facebook', $selected) ) $hidefacebook = true;
+	if( in_array('hide-twitter', $selected) ) $hidetwitter = true;
+	if( in_array('hide-linkedin', $selected) ) $hidelinkedin = true;
+	if( in_array('hide-google', $selected) ) $hidegoogle = true;
+	if( in_array('hide-pinterest', $selected) ) $hidepinterest = true;
+	if( in_array('hide-email', $selected) ) $hideemail = true;
+}
 ?>
 
 <ul class="social-share">

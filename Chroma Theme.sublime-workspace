@@ -127,6 +127,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "styles/core/_header-base.scss",
+			"settings":
+			{
+				"buffer_size": 933,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "template-parts/social-share.php",
+			"settings":
+			{
+				"buffer_size": 2685,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -185,7 +201,10 @@
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/bower_components",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/functions",
-		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/page-templates"
+		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/page-templates",
+		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles",
+		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles/core",
+		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/template-parts"
 	],
 	"file_history":
 	[
@@ -435,8 +454,162 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "styles/core/_header-base.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 933,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								278,
+								278
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.scan":
+							{
+								"allowed_colors":
+								[
+									"hsl",
+									"rgb",
+									"rgba",
+									"hex",
+									"hsla",
+									"webcolors",
+									"hex_compressed"
+								],
+								"compress_hex_output": true,
+								"current_ext": ".scss",
+								"current_syntax": "SCSS/SCSS",
+								"enabled": true,
+								"last_updated": 1456244405.38,
+								"scan_completion_scopes":
+								[
+									"source.scss -comment -string",
+									"source.sass -comment -string"
+								],
+								"scan_scopes":
+								[
+									"meta.property-list.css.sass -comment -string",
+									"constant.other.rgb-value.sass -comment -string",
+									"constant.other.color.rgb-value.scss -comment -string",
+									"constant.other.color.rgb-value.scss",
+									"support.constant.color.w3c-standard-color-name.scss",
+									"meta.property-value.scss",
+									"sass-script-maps -variable.other -comment -string"
+								],
+								"use_hex_argb": false
+							},
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "template-parts/social-share.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2685,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1508,
+								1508
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.scan":
+							{
+								"allowed_colors":
+								[
+									"hsl",
+									"rgb",
+									"rgba",
+									"hex",
+									"hsla",
+									"webcolors",
+									"hex_compressed"
+								],
+								"compress_hex_output": true,
+								"current_ext": ".php",
+								"current_syntax": "PHP/PHP",
+								"enabled": true,
+								"last_updated": 1456244405.38,
+								"scan_completion_scopes":
+								[
+								],
+								"scan_scopes":
+								[
+									"meta.property-value.css -comment -string",
+									"meta.value.css -comment -string",
+									"meta.tag.inline.any.html string.quoted",
+									"meta.tag.any.html meta.attribute-with-value.style.html"
+								],
+								"use_hex_argb": false
+							},
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
