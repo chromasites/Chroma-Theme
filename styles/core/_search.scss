@@ -1,0 +1,58 @@
+// Search Results Page
+.search-results {
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+
+	#main {
+		@include make-md-column(8);
+	}
+
+	.hentry {
+		margin-bottom: 2em;
+	}
+}
+
+.search-results-title {
+	font-size: 1em;
+	color: #aaa;
+	margin: 1em 0 2em;
+}
+
+.search-title {
+	font-size: 1.2em;
+	margin: 0;
+
+	a {
+		color: #1a0dab;
+		text-decoration: none;
+
+		&:visited {
+			color: #609;
+		}
+
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
+	}
+}
+
+.search-meta {
+	color: #808080;
+}
+
+.search-link {
+	font-size: 1em;
+	color: #006621;
+	margin: 2px 15% 0 0;
+	white-space: nowrap; 
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.search-summary {
+	line-height: 20/14;
+}
+
+.search-thumbnail {
+	max-width: 80px;
+}
