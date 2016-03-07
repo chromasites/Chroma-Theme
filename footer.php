@@ -35,5 +35,7 @@
 
 <?php wp_footer(); ?>
 
+<!--<?php echo get_num_queries(); ?>q/<?php timer_stop(1); ?>s-->
+
 </body>
 </html>

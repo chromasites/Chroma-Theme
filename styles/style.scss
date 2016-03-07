@@ -60,7 +60,6 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 # Layout
 «»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
 @import "core/letterhead";
-@import "core/layouts-base";
 @import "core/page-layouts";
 
 /*
@@ -72,7 +71,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 /*
 # Navigation
 «»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
-@import "core/navbar";
+@import "navbar";
 @import "core/navbar-mobile";
 @import "core/navbar-xtoggle";
 
@@ -90,24 +89,29 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 /*
 # Footer
 «»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
-@import "core/footer-base";
 @import "footer";
 @import "superfooter";
 
 /*
 # Blog
 «»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
-@import "core/blog";
+@import "posts";
+@import "core/post-navigation";
 @import "core/post-layouts";
 @import "core/post-meta";
 @import "core/comments";
 @import "index";
-@import "post";
+
 
 /*
 # Pages
 «»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
 @import "pages";
+
+/*
+# Search
+«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
+@import "core/search";
 
 /*
 # Forms

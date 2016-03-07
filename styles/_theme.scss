@@ -1,37 +1,10 @@
 // Theme Variables
 // DO NOT INCLUDE CSS
 
-// ======== Brand Colors ======== //
-$brand-primary:         #337ab7;
-$brand-success:         #5cb85c;
-$brand-info:            #5bc0de;
-$brand-warning:         #f0ad4e;
-$brand-danger:          #d9534f;
-
-$state-success-text:             #3c763d !default;
-$state-success-bg:               #dff0d8 !default;
-$state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
-
-$state-info-text:                #31708f !default;
-$state-info-bg:                  #d9edf7 !default;
-$state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%) !default;
-
-$state-warning-text:             #8a6d3b !default;
-$state-warning-bg:               #fcf8e3 !default;
-$state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%) !default;
-
-$state-danger-text:              #a94442 !default;
-$state-danger-bg:                #f2dede !default;
-$state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
-
-
-
 
 // ======== Body ======== //
 $body-bg:               #fff;
 $text-color:            #555;
-$link-color:            $brand-primary;
-$link-hover-decoration: underline; // underline, none
 
 
 
@@ -44,8 +17,43 @@ $font-family-serif:       Georgia, "Times New Roman", Times, serif;
 
 $font-size-base:          14px;
 $line-height-base:        (24/14);
+
 $font-family-base:        $font-family-sans-serif; // $font-family-serif
 $headings-font-family:    inherit;
+
+
+
+
+
+// ======== Brand Colors ======== //
+$brand-primary:         #337ab7;
+$brand-success:         #5cb85c;
+$brand-info:            #5bc0de;
+$brand-warning:         #f0ad4e;
+$brand-danger:          #d9534f;
+
+$state-success-text:             #3c763d;
+$state-success-bg:               #dff0d8;
+$state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
+
+$state-info-text:                #31708f;
+$state-info-bg:                  #d9edf7;
+$state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%) !default;
+
+$state-warning-text:             #8a6d3b;
+$state-warning-bg:               #fcf8e3;
+$state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%) !default;
+
+$state-danger-text:              #a94442;
+$state-danger-bg:                #f2dede;
+$state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
+
+
+
+
+// ======== Navbar ======== //
+$link-color:            $brand-primary;
+$link-hover-decoration: underline; // underline, none
 
 
 
@@ -64,19 +72,21 @@ $navbar-link-bg:                   transparent;
 $navbar-link-hover-color:          #fff;
 $navbar-link-hover-bg:             $brand-primary;
 
-// Navbar button styles
 $navbar-link-md-horizontal-padding:   20px;
 $navbar-link-lg-horizontal-padding:   30px;
 
+// Navbar button styles
 $navbar-link-md-right-margin:    5px;
-$navbar-link-md-left-margin:    0px;
+$navbar-link-md-left-margin:     0px;
 $navbar-link-lg-right-margin:    10px;
-$navbar-link-lg-left-margin:    0px;
+$navbar-link-lg-left-margin:     0px;
 
-$navbar-link-top-margin:           5px;
-$navbar-link-bottom-margin:        $navbar-link-top-margin;
-$navbar-height:                    50px;
-$navbar-link-border-radius:        4px;
+$navbar-link-top-margin:         5px;
+$navbar-link-bottom-margin:      $navbar-link-top-margin;
+$navbar-height:                  50px;
+$navbar-link-border-radius:      2px;
+
+
 
 
 
@@ -86,10 +96,7 @@ $footer_bg: $body-bg;
 
 
 
+
 // ======== Modal Popups ======== //
 $modal-backdrop-bg:           #000;
 $modal-backdrop-opacity:      .5;
-
-
-
-
