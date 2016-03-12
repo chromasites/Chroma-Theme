@@ -2,21 +2,31 @@
 	display: block;
 }
 
-.hentry {
-	@include clearfix;
-	margin: 0 0 1.5em;
-}
-
 .updated:not(.published){
 	display: none;
-}
-
-.entry-content,
-.entry-summary {
-	margin: 1.5em 0 0;
 }
 
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+// Magazine Cover post layout
+#feature-hero {
+	@include center-block;
+	max-width: 1680px;
+
+	h1,
+	a,
+	.entry-meta {
+		color: #fff;
+		text-align: center;
+		font-weight: 600;
+	}
+
+	&.has-featured-image .entry-header {
+		padding-top: 35%;
+		background-color: transparent;
+		background: rgba(0, 0, 0, 0.2);
+	}
 }

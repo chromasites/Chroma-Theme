@@ -23,6 +23,7 @@ function chroma_customize_register( $wp_customize ) {
 
 	require 'customizer-layout.php';
 	require 'customizer-header.php';
+	require 'customizer-blog.php';
 	require 'customizer-footer.php';
 
 	// Require additional customizer functions.
