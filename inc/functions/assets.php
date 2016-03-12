@@ -22,15 +22,11 @@ function chroma_scripts() {
 		''
 	);
 	wp_enqueue_script(
-		'jquery',
-		true
-	);
-	wp_enqueue_script(
 		'chromatheme',
 		get_template_directory_uri() . '/js/chromatheme.min.js',
-		'jquery',
+		['jquery'],
 		'4.0',
-		true
+		false
 	);
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

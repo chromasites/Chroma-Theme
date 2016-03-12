@@ -14,11 +14,11 @@
 				<?php get_template_part('template-parts/header', 'logo'); ?>
 			</div>
 
-			<div class="site-info site-info-1 col-sm-8 col-md-4">
+			<div class="site-info site-info-1 col-sm-6 col-md-4">
 				Site Info 1
 			</div>
 
-			<div class="site-info site-info-2 col-sm-8 col-md-4">
+			<div class="site-info site-info-2 col-sm-6 col-md-4">
 				<?php get_template_part('template-parts/social', 'icons'); ?>
 			</div>
 

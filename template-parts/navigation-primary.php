@@ -27,7 +27,7 @@ if (has_nav_menu( 'mobile' )) { $show_mobile_menu = 'show-mobile-menu'; } ?>
 
 		</div>
 		
-		<div id="navbar-collapse" class="collapse navbar-collapse <?php echo $show_mobile_menu;?>">
+		<div id="navbar-collapse" class="collapse navbar-collapse <?php echo get_theme_mod('navbar_alignment'); ?> <?php echo $show_mobile_menu;?>">
 			<?php
 			// Output navigation through Bootstrap navwalker.
 			wp_nav_menu( array(
