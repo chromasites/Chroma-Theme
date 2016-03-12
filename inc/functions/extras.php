@@ -23,6 +23,8 @@ function chroma_body_classes( $classes ) {
 
 	$classes[] = get_theme_mod('chroma_layout');
 
+	if ( get_theme_mod('fixed_navbar') == 'checked' ) { $classes[] = 'fixed-navbar-top'; }
+
 	if ( is_multi_author() ) { $classes[] = 'group-blog'; }
 
 	if ( ! is_singular() ) { $classes[] = 'hfeed'; }

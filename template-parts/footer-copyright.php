@@ -15,12 +15,4 @@ if( get_theme_mod( 'copyright_start_year' ) != '') {
 
 echo date("Y ");
 
-if( get_theme_mod( 'custom_copyright' ) != '') {
-
-	echo get_theme_mod( 'custom_copyright' );
-
-} else {
-
-	bloginfo('name');
-
-}
+echo get_theme_mod( 'custom_copyright', get_bloginfo('name') );

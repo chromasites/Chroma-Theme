@@ -19,14 +19,3 @@
 	
 }
 
-.compact-header-layout .brand-link {
-	@extend .navbar-brand;
-	display: inline !important;
-    height: $navbar-height + $navbar-link-bottom-margin + $navbar-link-bottom-margin;
-
-	img {
-		max-height: 100%;
-		width: auto;
-	}
-
-}

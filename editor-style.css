@@ -2506,7 +2506,7 @@ body#tinymce.wp-editor {
   body#tinymce.wp-editor .navbar {
     position: relative;
     min-height: 50px;
-    margin-bottom: 24px;
+    margin-bottom: 0;
     border: 1px solid transparent; }
     body#tinymce.wp-editor .navbar:before, body#tinymce.wp-editor .navbar:after {
       content: " ";

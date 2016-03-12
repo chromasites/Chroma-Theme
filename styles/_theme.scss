@@ -51,7 +51,7 @@ $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !
 
 
 
-// ======== Navbar ======== //
+// ======== Links ======== //
 $link-color:            $brand-primary;
 $link-hover-decoration: underline; // underline, none
 
@@ -75,6 +75,8 @@ $navbar-link-hover-bg:             $brand-primary;
 $navbar-link-md-horizontal-padding:   20px;
 $navbar-link-lg-horizontal-padding:   30px;
 
+$navbar-margin-bottom:             0;
+
 // Navbar button styles
 $navbar-link-md-right-margin:    5px;
 $navbar-link-md-left-margin:     0px;
@@ -86,6 +88,7 @@ $navbar-link-bottom-margin:      $navbar-link-top-margin;
 $navbar-height:                  50px;
 $navbar-link-border-radius:      2px;
 
+$navbar-total-height: $navbar-height + $navbar-link-top-margin + $navbar-link-bottom-margin + 2;
 
 
 
