@@ -27,6 +27,9 @@ require get_template_directory() . '/inc/acf/acf-setup.php';
 // Theme customizer options.
 require get_template_directory() . '/inc/customizer/customizer.php';
 
+// WooCommerce Support.
+// require get_template_directory() . '/inc/extras/woocommerce-support.php';
+
 /**
  * Implement the Custom Header feature.
  *
