@@ -1,30 +1,6 @@
 // Theme Variables
 // DO NOT INCLUDE CSS
 
-
-// ======== Body ======== //
-$body-bg:               #fff;
-$text-color:            #555;
-
-
-
-
-
-// ======== Fonts ======== //
-// Add new Google fonts in inc/functions/assets.php
-$font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family-serif:       Georgia, "Times New Roman", Times, serif;
-
-$font-size-base:          14px;
-$line-height-base:        (24/14);
-
-$font-family-base:        $font-family-sans-serif; // $font-family-serif
-$headings-font-family:    inherit;
-
-
-
-
-
 // ======== Brand Colors ======== //
 $brand-primary:         #337ab7;
 $brand-success:         #5cb85c;
@@ -47,6 +23,31 @@ $state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%) 
 $state-danger-text:              #a94442;
 $state-danger-bg:                #f2dede;
 $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
+
+
+
+
+
+
+// ======== Body ======== //
+$body-bg:               #fff;
+$text-color:            #333;
+
+
+
+
+
+// ======== Fonts ======== //
+// Add new Google fonts in inc/functions/assets.php
+$font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif;
+
+$font-size-base:          16px;
+$line-height-base:        (24/16);
+
+$font-family-base:        $font-family-sans-serif; // $font-family-serif
+$headings-font-family:    inherit;
+
 
 
 

@@ -6,6 +6,15 @@ $sidebar_col_width: 4; // in columns
 // Set width for #main
 $main_col_width: $grid-columns - $sidebar_col_width;
 
+.page-section,
+.hentry {
+	@extend .clearfix;
+}
+.page-section {
+	background-color: #fff;
+	padding: 2em 0;
+}
+
 #main {
 	@include make-md-column(12);
 }
@@ -62,3 +71,12 @@ $main_col_width: $grid-columns - $sidebar_col_width;
 		@include make-md-column(12);
 	}
 }
+
+// Custom Layout for Beaver Builder
+.custom-layout {
+	&.page-section,
+	#main,
+	.entry-content {
+		padding: 0 !important;
+		margin: 0 !important;
+	
