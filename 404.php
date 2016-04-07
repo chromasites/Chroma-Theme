@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-<div id="error-page" class="right-sidebar">
+<div id="error-page" class="page-section right-sidebar">
 
 	<header class="page-header">
 		<div class="container">

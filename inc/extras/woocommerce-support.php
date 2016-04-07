@@ -40,3 +40,6 @@ add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {
     add_theme_support( 'woocommerce' );
 }
+
+// Show up to 24 products per page on archives
+add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 24;' ), 20 );

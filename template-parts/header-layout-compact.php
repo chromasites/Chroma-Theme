@@ -18,11 +18,11 @@
 		<div class="row">
 
 			<div class="site-info site-info-1 col-sm-6 ">
-				Site Info 1
+				<?php get_template_part('template-parts/header', 'siteinfo-1'); ?>
 			</div>
 
 			<div class="site-info site-info-2 col-sm-6">
-				<?php get_template_part('template-parts/social', 'icons'); ?>
+				<?php get_template_part('template-parts/header', 'siteinfo-2'); ?>
 			</div>
 
 		</div>

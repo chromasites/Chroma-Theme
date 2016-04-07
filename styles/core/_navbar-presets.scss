@@ -1,5 +1,10 @@
 // Navbar Presets
 
+.chroma-navbar {
+	border-left: none;
+	border-right: none;
+}
+
 // Display alternate mobile menu when available
 .show-mobile-menu {
 	.desktop-menu {display: none;}

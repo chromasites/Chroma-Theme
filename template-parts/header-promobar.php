@@ -7,10 +7,10 @@
 
 ?>
 
-<div id="promo-bar" class="">
+<div id="promo-bar" class="navbar navbar-inverse">
 	<div class="container-fluid">
 		
-		Promo Bar
+		
 
 	</div>
 </div><!-- #promo-bar -->
