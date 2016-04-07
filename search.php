@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<div id="search-results-page" class="">
+<div id="search-results-page" class="page-section">
 
 	<div class="container">
 

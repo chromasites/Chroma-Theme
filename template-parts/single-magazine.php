@@ -6,7 +6,7 @@
  */
 ?>
 
-<div id="blog-post" class="magazine-cover right-sidebar">
+<div id="blog-post" class="page-section magazine-cover right-sidebar">
 
 	<?php while ( have_posts() ) : the_post(); ?>
 

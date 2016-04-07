@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<div id="page" class="right-sidebar">
+<div id="page" class="page-section right-sidebar">
 
 	<?php get_template_part('template-parts/titles', 'page'); ?>
 

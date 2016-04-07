@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<div id="blog-index" class="right-sidebar">
+<div id="blog-index" class="page-section right-sidebar">
 
 	<header class="page-header">
 		<div class="container">

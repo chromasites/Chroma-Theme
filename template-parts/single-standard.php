@@ -6,7 +6,7 @@
  */
 ?>
 
-<div id="blog-post" class="right-sidebar">
+<div id="blog-post" class="page-section right-sidebar">
 
 	<div class="container">
 		<div class="row">
