@@ -10,7 +10,7 @@ if ( ! is_active_sidebar( 'main-sidebar' ) ) {
 }
 ?>
 
-<aside id="sidebar" class="widget-area" role="complementary">
+<aside class="widget-area sidebar-content" role="complementary">
 	<?php
 
 	if ( is_page() ) {
