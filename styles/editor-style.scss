@@ -5,7 +5,45 @@ body#tinymce.wp-editor{
 	@import "core/bootstrap-resources";
 	@import "core/mixins/mixins-master";
 
-	@import "core/bootstrap-components";
-	@import "../bower_components/font-awesome/scss/font-awesome";
+	// @import "../bower_components/font-awesome/scss/font-awesome";
+	max-width: 750px;
+
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+	color: $text-color;
+	background-color: #fff;
+
+	img {
+		max-width: 100%;
+	}
+
+	a {
+		color: $link-color;
+
+		&:hover{
+			color: $link-hover-color;
+			text-decoration: $link-hover-decoration;
+		}
+	}
+
+	div {
+		outline: 1px dotted #eee;
+	}
+
+	.btn {
+		-moz-user-select: text !important;
+		-webkit-user-select: text !important;
+		-ms-user-select: text !important;
+		user-select: text !important;
+		cursor: text !important;
+	}
+
+	@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+	@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/code";
+	@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+	@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/tables";
+	@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
+	@import "core/type";
 	@import "typography";
 }
