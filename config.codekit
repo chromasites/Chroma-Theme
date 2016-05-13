@@ -33,6 +33,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
+	"\/acf-json\/group_56bbe2cda34a5.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/acf-json\/group_56bbe2cda34a5.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/acf-json\/group_56bbe2cda34a5-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/acf-json\/group_56c116279086b.json": {
 		"fileType": 524288,
 		"ignore": 1,

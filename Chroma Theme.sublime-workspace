@@ -159,6 +159,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "template-parts/social-share.php",
+			"settings":
+			{
+				"buffer_size": 2798,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -215,7 +223,6 @@
 	[
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/bower_components",
-		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/bower_components/autosize/example",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/bower_components/bootstrap-sass",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/bower_components/bootstrap-sass/assets",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/bower_components/bootstrap-sass/assets/stylesheets",
@@ -232,6 +239,7 @@
 	],
 	"file_history":
 	[
+		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/functions/extras.php",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles/editor-style.scss",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles/_theme.scss",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss",
@@ -286,7 +294,6 @@
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles/_posts.scss",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles/_header.scss",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss",
-		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/functions/extras.php",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/customizer/customizer-header.php",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/template-parts/navigation-primary.php",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles/core/_navbar-mobile.scss",
@@ -499,8 +506,81 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "template-parts/social-share.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2798,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								436,
+								436
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.scan":
+							{
+								"allowed_colors":
+								[
+									"webcolors",
+									"hex",
+									"hex_compressed",
+									"hsla",
+									"rgb",
+									"hsl",
+									"rgba"
+								],
+								"compress_hex_output": true,
+								"current_ext": ".php",
+								"current_syntax": "PHP/PHP",
+								"enabled": true,
+								"last_updated": 1462375513.53,
+								"scan_completion_scopes":
+								[
+								],
+								"scan_scopes":
+								[
+									"meta.property-value.css -comment -string",
+									"meta.value.css -comment -string",
+									"meta.tag.inline.any.html string.quoted",
+									"meta.tag.any.html meta.attribute-with-value.style.html"
+								],
+								"use_hex_argb": false
+							},
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
