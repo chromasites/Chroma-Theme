@@ -30,7 +30,6 @@ $social_brand_custom3:		#333 !default;
 .social-icons {
 	text-align: center;
 	@include list-clean;
-	@include clearfix;
 
 	> li {
 		display: inline-block;

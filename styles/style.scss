@@ -42,6 +42,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 /*
 # Bootstrap Custom
 «»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
+@import "core/bootstrap-classes";
 @import "core/bootstrap-components";
 
 /*
@@ -50,10 +51,12 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 @import "core/wp-media.scss";
 @import "core/wp-galleries.scss";
 @import "core/accessibility.scss";
+@import "core/clearfix.scss";
 
 /*
 # Typography
 «»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
+@import "core/type.scss";
 @import "typography";
 
 /*

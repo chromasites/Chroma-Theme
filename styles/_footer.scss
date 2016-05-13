@@ -31,35 +31,17 @@
 	}
 }
 
-.footer-search {
-	max-width: 300px;
-	@include center-block;
-
-	input {
-		background-color: darken($footer_bg, 2.5%);
-		border-color: darken($footer_bg, 8%);
-		border-top-color: darken($footer_bg, 12%);
-	}
-
-	button {
-		background-color: lighten($footer_bg, 3%);
-		border-color: darken($footer_bg, 8%);
-		border-bottom-color: darken($footer_bg, 12%);
-		color: lighten($footer_bg, 15%);
-	}
-}
-
 .copyright {
 	text-align: center;
 	margin-bottom: 15px;
 }
 
 .login a {
-	color: darken($body-bg, 15%);
+	color: darken($body-bg, 5%);
 	width: 50px;
 	margin-right: -50px;
 	
 	&:hover {
-		color: darken($body-bg, 50%);
+		color: darken($body-bg, 100%);
 	}
 }

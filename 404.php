@@ -18,11 +18,11 @@ get_header(); ?>
 
 	<div class="container">
 
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main col-md-8" role="main">
 
 			<section class="error-404 not-found">
 
-				<div class="page-content">
+				<div class="entry-content">
 					
 					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'chroma' ); ?></p>
 
@@ -36,34 +36,39 @@ get_header(); ?>
 
 		</main><!-- #main -->
 
-		<aside id="sidebar" class="widget-area" role="complementary">
-			
-			<?php
-
-				the_widget( 'WP_Widget_Recent_Posts' );
-
-				// Only show the widget if site has multiple categories.
-				if ( chroma_categorized_blog() ) :
-			?>
-
-			<div class="widget widget_categories">
-				<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'chroma' ); ?></h2>
-				<ul>
+		
+		<div id="sidebar" class="col-md-4">
+			<aside class="widget-area sidebar-content" role="complementary">
 				<?php
-					wp_list_categories( array(
-						'orderby'    => 'count',
-						'order'      => 'DESC',
-						'show_count' => 1,
-						'title_li'   => '',
-						'number'     => 10,
+
+					the_widget( 'WP_Widget_Recent_Posts', null, array(
+						'before_title' => '<h3 class="widget-title">',
+						'after_title' => '</h3>',
 					) );
+
+					// Only show the widget if site has multiple categories.
+					if ( chroma_categorized_blog() ) :
 				?>
-				</ul>
-			</div><!-- .widget -->
 
-			<?php endif; ?>
+				<div class="widget widget_categories">
+					<h3 class="widget-title"><?php esc_html_e( 'Popular Categories', 'chroma' ); ?></h3>
+					<ul>
+					<?php
+						wp_list_categories( array(
+							'orderby'    => 'count',
+							'order'      => 'DESC',
+							'show_count' => 1,
+							'title_li'   => '',
+							'number'     => 10,
+						) );
+					?>
+					</ul>
+				</div><!-- .widget -->
 
-		</aside><!-- #sidebar -->
+				<?php endif; ?>
+
+			</aside>	
+		</div><!-- #sidebar -->
 
 	</div>
 		

@@ -27,7 +27,7 @@ get_header(); ?>
 	<div class="container">
 		<div class="row">
 		
-			<main id="main" class="site-main" role="main">
+			<main id="main" class="site-main col-md-8" role="main">
 
 			<?php
 			if ( have_posts() ) :
@@ -54,7 +54,9 @@ get_header(); ?>
 
 			</main><!-- #main -->
 			
-			<?php get_sidebar(); ?>
+			<div id="sidebar" class="col-md-4">
+				<?php get_sidebar(); ?>
+			</div>
 
 		</div><!-- .row -->
 	</div>

@@ -1,48 +1,12 @@
 // Page Layouts
 
-// Sidebar width
-$sidebar_col_width: 4; // in columns
-
-// Set width for #main
-$main_col_width: $grid-columns - $sidebar_col_width;
-
-.page-section,
-.hentry {
-	@extend .clearfix;
-}
-.page-section {
-	background-color: #fff;
-	padding: 2em 0;
-}
-
-#main {
-	@include make-md-column(12);
-}
-
-// Sidebar Layouts
-.right-sidebar {
-	#sidebar {
-		@include make-md-column($sidebar_col_width);
-	}
-	#main {
-		@include make-md-column($main_col_width);
-	}
-}
-
-// Pull & push for left sidebar
-.left-sidebar {
-	@extend .right-sidebar;
-
-	#sidebar {
-		@include make-md-column-pull($main_col_width);
-	}
-	#main {
-		@include make-md-column-push($sidebar_col_width);
-	}
-}
-
-// One Column Layouts with offset for centered content
+// One Column Layouts with offset for centered content (no grid classes)
 .no-sidebar {
+
+	#main {
+		@include make-md-column(12);
+	}
+
 	&.content-width-narrow {
 		#main {
 			@include make-xs-column(10);
@@ -50,7 +14,8 @@ $main_col_width: $grid-columns - $sidebar_col_width;
 			@include make-md-column(6);
 		}
 
-		&.content-align-center #main {
+		&.content-align-center #main,
+		&.content-align-center .page-header h1 {
 			@include make-xs-column-offset(1);
 			@include make-sm-column-offset(2);
 			@include make-md-column-offset(3);
@@ -62,7 +27,8 @@ $main_col_width: $grid-columns - $sidebar_col_width;
 			@include make-md-column(8);
 		}
 
-		&.content-align-center #main {
+		&.content-align-center #main,
+		&.content-align-center .page-header h1 {
 			@include make-md-column-offset(2);
 		}
 	}
@@ -74,9 +40,9 @@ $main_col_width: $grid-columns - $sidebar_col_width;
 
 // Custom Layout for Beaver Builder
 .custom-layout {
-	&.page-section,
 	#main,
 	.entry-content {
 		padding: 0 !important;
 		margin: 0 !important;
-	
+	}
+}

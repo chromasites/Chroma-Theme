@@ -32,7 +32,8 @@
 						  "data-from" : "0",
 						  "data-to" : "2.5",
 						  "data-opacity" : "0",
-						  "data-translatey" : "-400"
+						  "data-translatey" : "-400",
+						  "easing" : "linear",
 						});
 				    	$("#feature-hero .entry-meta").addClass("animateme").attr({
 						  "data-when" : "enter",
@@ -55,7 +56,7 @@
 	<div class="container">
 		<div class="row">
 		
-			<main id="main" class="site-main" role="main">
+			<main id="main" class="site-main col-md-8" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -98,7 +99,9 @@
 
 			</main><!-- #main -->	
 			
-			<?php get_sidebar(); ?>
+			<div id="sidebar" class="col-md-4">
+				<?php get_sidebar(); ?>
+			</div>
 
 		</div><!-- .row -->
 	</div>
