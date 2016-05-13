@@ -9,7 +9,10 @@
 $emailsubject    =  'Look at this...';
 $pageurl         =  esc_url( get_permalink() );
 $pagetitle       =  esc_html( get_the_title() );
-$featuredimage   =  esc_url( wp_get_attachment_image_src( get_post_thumbnail_id($post->ID) ) );
+$image_attributes = wp_get_attachment_image_src( $attachment_id = get_post_thumbnail_id($post->ID), $size = 'full' );
+if ( $image_attributes ) :
+    $featuredimage   =  esc_url( $image_attributes[0] );
+endif;
 
 // Build social sharing parameter links
 $facebookshare   =  'http://www.facebook.com/sharer.php?u=' . $pageurl;

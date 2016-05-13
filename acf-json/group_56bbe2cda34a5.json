@@ -1,0 +1,89 @@
+{
+    "key": "group_56bbe2cda34a5",
+    "title": "Content Layout",
+    "fields": [
+        {
+            "key": "field_56bbe35a79fb3",
+            "label": "Column Width",
+            "name": "content_column_width",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "content-width-narrow": "Narrow",
+                "content-width-normal": "Normal",
+                "content-width-full": "Full"
+            },
+            "default_value": {
+                "content-width-normal": "content-width-normal"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0
+        },
+        {
+            "key": "field_56bbe3f379fb4",
+            "label": "Column Alignment",
+            "name": "content_column_align",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_56bbe35a79fb3",
+                        "operator": "!=",
+                        "value": "content-width-full"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "content-align-center": "Center",
+                "content-align-left": "Left"
+            },
+            "default_value": {
+                "content-align-center": "content-align-center"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-templates\/page-no-sidebar.php"
+            }
+        ]
+    ],
+    "menu_order": 10,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1460476149
+}
