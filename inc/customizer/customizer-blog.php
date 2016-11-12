@@ -36,7 +36,9 @@ $wp_customize->add_control(
 );
 
 // Header layout style.
-$wp_customize->add_setting( 'blog_post_layout' );
+$wp_customize->add_setting( 'blog_post_layout', array(
+    'default' => 'standard',
+) );
 $wp_customize->add_control(
 	'blog_post_layout',
 	array(

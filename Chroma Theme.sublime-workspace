@@ -160,10 +160,18 @@
 	"buffers":
 	[
 		{
-			"file": "template-parts/social-share.php",
+			"file": "inc/customizer/customizer-blog.php",
 			"settings":
 			{
-				"buffer_size": 2798,
+				"buffer_size": 1270,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "inc/functions/template-tags.php",
+			"settings":
+			{
+				"buffer_size": 4613,
 				"line_ending": "Unix"
 			}
 		}
@@ -227,18 +235,19 @@
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/bower_components/bootstrap-sass/assets",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/bower_components/bootstrap-sass/assets/stylesheets",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/bower_components/bootstrap-sass/assets/stylesheets/bootstrap",
+		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc",
-		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/customizer",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/extras",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/functions",
+		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/js",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/page-templates",
-		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles/core",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles/core/mixins",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/template-parts"
 	],
 	"file_history":
 	[
+		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/template-parts/social-share.php",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/functions/extras.php",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles/editor-style.scss",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles/_theme.scss",
@@ -316,7 +325,6 @@
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles/core/_wp-galleries.scss",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles/core/_wp-captions.scss",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles/core/_wp-emoji.scss",
-		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/template-parts/social-share.php",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/styles/core/_header-base.scss",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/acf/acf-setup.php",
 		"/Users/nsk/Sites/samplesass/wp-content/themes/chroma/inc/acf/acf-custom-page-template.php",
@@ -506,24 +514,74 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "template-parts/social-share.php",
+					"file": "inc/customizer/customizer-blog.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2798,
+						"buffer_size": 1270,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								436,
-								436
+								918,
+								918
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.scan":
+							{
+								"current_ext": ".php",
+								"current_syntax": "PHP/PHP",
+								"enabled": false,
+								"last_updated": 1468615821.03
+							},
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "inc/functions/template-tags.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 4613,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -546,19 +604,19 @@
 							{
 								"allowed_colors":
 								[
-									"webcolors",
-									"hex",
-									"hex_compressed",
-									"hsla",
 									"rgb",
+									"hsla",
 									"hsl",
-									"rgba"
+									"hex",
+									"webcolors",
+									"rgba",
+									"hex_compressed"
 								],
 								"compress_hex_output": true,
 								"current_ext": ".php",
 								"current_syntax": "PHP/PHP",
 								"enabled": true,
-								"last_updated": 1462375513.53,
+								"last_updated": 1468615821.06,
 								"scan_completion_scopes":
 								[
 								],
@@ -575,7 +633,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1836.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
