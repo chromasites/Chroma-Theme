@@ -1,10 +1,10 @@
 /*!
 Theme Name: Chroma Theme
-Theme URI: http://underscores.me/
+Theme URI: http://www.chromasites.com
 Author: Chroma Sites
 Author URI: http://www.chromasites.com
-Description: a Chroma Sites Web Production
-Version: 4.0.0-alpha
+Description: A Chroma Sites Web Design
+Version: 4.2.0
 Text Domain: chroma
 
 (C) 2012-2016 Chroma Sites & Coldfire Inc. All rights reserved.
@@ -18,7 +18,6 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 «»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»
 # Normalize
 # Bootstrap Custom
-# Font Awesome
 # WordPress
 # Typography
 # Layout
@@ -35,7 +34,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 «»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
 
 //Load varaibles and mixins first
-@import "core/site-variables";
+@import "theme";
 @import "core/bootstrap-resources";
 @import "core/mixins/mixins-master";
 
@@ -48,21 +47,18 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 /*
 # WordPress
 «»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
-@import "core/wp-media.scss";
-@import "core/wp-galleries.scss";
-@import "core/accessibility.scss";
-@import "core/clearfix.scss";
+@import "wp-media";
+@import "helper-classes";
 
 /*
 # Typography
 «»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
-@import "core/type.scss";
 @import "typography";
 
 /*
 # Layout
 «»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
-@import "core/letterhead";
+@import "letterhead";
 @import "core/page-layouts";
 
 /*
@@ -76,24 +72,16 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 «»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
 @import "core/navbar-presets";
 @import "navbar";
-@import "core/navbar-xtoggle";
-
-/*
-# Social Media
-«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
-@import "core/social-icons";
-@import "core/social-share";
-
-/*
-# Sidebar
-«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
-@import "sidebar";
 
 /*
 # Footer
 «»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
 @import "footer";
-@import "superfooter";
+
+/*
+# Social Media
+«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
+@import "social-media";
 
 /*
 # Blog
@@ -101,25 +89,23 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 @import "posts";
 @import "core/post-navigation";
 @import "core/post-layouts";
-@import "core/post-meta";
-@import "core/comments";
-@import "index";
+@import "comments";
 
 
 /*
 # Pages
 «»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
-@import "pages";
+@import "page-content";
 
 /*
 # Search
 «»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
-@import "core/search";
+@import "search";
 
 /*
 # Forms
 «»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
-@import "core/form-fields";
+@import "forms";
 
 /*
 # WooCommerce Styles
@@ -129,4 +115,4 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 /*
 # Chroma Sites
 «»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
-@import "core/chroma-sites-branding";
+

@@ -1,0 +1,57 @@
+// Page Layouts
+
+body {
+	position: relative;
+}
+
+// One Column Layouts with offsets
+
+.content-width-narrow {
+
+	#main {
+		@include make-xs-column(10);
+		@include make-sm-column(8);
+		@include make-md-column(6);
+	}
+
+	&.content-position-center #main {
+		@include make-xs-column-offset(1);
+		@include make-sm-column-offset(2);
+		@include make-md-column-offset(3);
+	}
+
+	&.content-position-center .page-header h1.text-left {
+		@include make-md-column-offset(3);
+		padding-left: 7px;
+	}
+
+	&.content-position-right #main {
+		@include make-xs-column-offset(2);
+		@include make-sm-column-offset(4);
+		@include make-md-column-offset(6);
+	}
+}
+
+.content-width-normal {
+
+	#main {
+		@include make-md-column(8);
+	}
+
+	&.content-position-center #main {
+		@include make-md-column-offset(2);
+	}
+
+	&.content-position-center .page-header h1.text-left {
+		@include make-md-column-offset(2);
+		padding-left: 5px;
+	}
+
+	&.content-position-right #main {
+		@include make-md-column-offset(4);
+	}
+}
+
+.content-width-wide #main {
+	@include make-md-column(12);
+}

@@ -138,9 +138,19 @@
 
 	label {
 		display: block;
-		font-size: 11px;
+		font-size: .8;
 		text-transform: uppercase;
 	}
+
+	textarea#comment,
+	input#author,
+	input#email,
+	input#url, {
+		border: 2px solid #ddd;
+		width: 100%;
+		padding: 10px;
+	}
+
 	.submit {
 		@extend .btn, .btn-lg, .btn-block, .btn-success;
 		border-radius: 2px;

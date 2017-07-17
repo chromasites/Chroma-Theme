@@ -1,0 +1,78 @@
+// Footer
+
+#footer {
+	background-color: $footer_bg;
+	border-top: 1px solid #eee;
+	padding: 15px 0;
+
+	@include social-icons-style( 50%, 48px, 20px, center, 5px);
+
+	.footer-menu,
+	.social-icons,
+	.footer-search {
+		margin-bottom: 15px;
+	}
+}
+
+.footer-nav {
+	text-align: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+	li {
+		display: inline;
+	}
+
+	a {
+		color: darken($footer_bg, 50%);
+		padding: 5px;
+		display: inline-block;
+	}
+}
+
+
+// Superfooter
+
+
+// Subfooter
+.copyright {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.login a {
+	color: darken($body-bg, 10%);
+	width: 50px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	
+	&:hover {
+		color: darken($body-bg, 100%);
+	}
+}
+
+// Chroma Sites logo backlink
+$chroma-sites-brand-size: 64px;
+
+#chroma-sites-brand {
+	@include square($chroma-sites-brand-size);
+	@include center-block;
+	@include text-hide;
+	@include img-retina('images/chroma-sites-brand.png', 'images/chroma-sites-brand@2x.png', $chroma-sites-brand-size, ($chroma-sites-brand-size * 3));
+	background-repeat: no-repeat;
+	background-size: $chroma-sites-brand-size ($chroma-sites-brand-size * 3);
+	background-position: 0 (-$chroma-sites-brand-size);
+	margin-bottom: 50px;
+
+	&.dark {
+		background-position: 0 (-$chroma-sites-brand-size * 2);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-position: 0 0;
+	}
+}

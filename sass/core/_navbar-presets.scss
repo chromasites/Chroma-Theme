@@ -1,0 +1,110 @@
+// Navbar Presets
+
+.chroma-navbar {
+	border-left: none;
+	border-right: none;
+}
+
+// Display alternate mobile menu when available
+.show-mobile-menu {
+	.desktop-menu {display: none;}
+	.mobile-menu {display: block;}
+}
+@media (min-width: $grid-float-breakpoint) {
+	.show-mobile-menu {
+		.desktop-menu {display: block;}
+		.mobile-menu {display: none;}
+	}
+
+	// Hide navbar brand except on mobile
+	.navbar-brand {
+		display: none;
+	}
+	#navbar-collapse {
+		margin-left: -$navbar-padding-horizontal;
+	}
+}
+
+// Center aligned navbar links (left/right controlled by Bootstrap)
+@media (min-width: $grid-float-breakpoint) {
+    .navbar-centered .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar-centered.show-mobile-menu {
+		.desktop-menu {display: inline-block;}
+		.mobile-menu {display: none;}
+	}
+
+    .navbar-centered.navbar-collapse {
+        text-align: center;
+    }
+}
+
+// Compact header layout logo
+.compact-header-layout .brand-link {
+	@extend .navbar-brand;
+	display: inline !important;
+
+	@media (min-width: $grid-float-breakpoint) {
+	    height: $navbar-height + $navbar-link-bottom-margin + $navbar-link-bottom-margin;
+	}
+
+	img {
+		max-height: 100%;
+		width: auto;
+	}
+}
+
+// Fixed navbar to top
+body.fixed-navbar-top {
+	padding-top: $navbar-height;
+
+	.chroma-navbar {
+		@extend .navbar-fixed-top;
+	}
+
+	@media (min-width: $grid-float-breakpoint) {
+	    padding-top: $navbar-total-height;
+	}
+}
+
+
+// Navbar X Toggle: Animate mobile menu toggle to X on open
+.navbar-toggle {
+	border: none;
+	background: transparent !important;
+
+	&:hover {
+		background: transparent !important;
+	}
+
+	.icon-bar {
+		transition: all 0.5s;
+	}
+	.top-bar {
+		transform: rotate(45deg);
+		transform-origin: 10% 10%;
+	}
+	.middle-bar {
+		opacity: 0;
+	}
+	.bottom-bar {
+		transform: rotate(-45deg);
+		transform-origin: 10% 90%;
+	}
+
+	&.collapsed {
+		.top-bar {
+		  transform: rotate(0);      
+		}
+		.middle-bar {
+		  opacity: 1;
+		}
+		.bottom-bar {
+		  transform: rotate(0);
+		}
+	}
+}

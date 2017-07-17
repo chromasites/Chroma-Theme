@@ -1,0 +1,17 @@
+// Screen Readers: Do not show the outline on the skip link target
+.screen-reader-text {
+	@extend .sr-only;
+}
+
+#main-content[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+// Clearfix classes (consolidate into one CSS rule set)
+.page-section,
+.hentry,
+.entry-meta,
+.nav-links,
+.social-icons {
+	@extend .clearfix;
+}

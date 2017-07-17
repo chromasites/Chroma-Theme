@@ -5,6 +5,110 @@
 // Body text
 // -------------------------
 
+// Links
+a:visited {
+  color: lighten($link-color, 5%);
+}
+
+p {
+  margin: 0 0 ($line-height-computed / 2);
+}
+
+// Blockquotes
+blockquote {
+  color: #777;
+  background-color: #f5f5f5;
+  border-width: 7px;
+  border-color: $brand-primary;
+  border-left-style: solid;
+  padding: ($line-height-computed / 2) $line-height-computed;
+  margin: 0 0 $line-height-computed;
+  font-size: $font-size-base * 1.25;
+  font-style: italic;
+
+  p,
+  ul,
+  ol {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // Note: Deprecated small and .small as of v3.1.0
+  footer,
+  small,
+  .small {
+    display: block;
+    font-size: 80%; // back to default font-size
+    line-height: $line-height-base;
+    font-weight: 700;
+  }
+
+  // Opposite alignment of blockquote
+  &.flush-right,
+  &.blockquote-reverse {
+    border-left-style: none;
+    border-right-style: solid;
+    text-align: right;
+  }
+}
+
+
+
+
+
+// Headings
+// -------------------------
+
+.page-header {
+  padding-bottom: (($line-height-computed / 2) - 1);
+  margin: 0;
+  border-bottom: 1px solid #eee;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $headings-font-family;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: ($line-height-computed / 2);
+
+
+  small,
+  .small {
+    font-weight: normal;
+    line-height: 1;
+    color: 777;
+    font-size: 65%;
+  }
+}
+
+h1, .h1 {
+  font-size: 28px;
+  margin-top: $line-height-computed;
+  margin-bottom: $line-height-computed * .5;
+}
+h2, .h2 {
+  font-size: 26px;
+  margin-top: $line-height-computed * 1.5;
+}
+h3, .h3 {
+  font-size: 22px;
+  margin-top: $line-height-computed;
+}
+h4, .h4 {
+  font-size: 18px;
+  margin-top: ($line-height-computed / 2);
+}
+h5, .h5 {
+  font-size: 14px;
+  margin-top: ($line-height-computed / 2);
+}
+h6, .h6 {
+  font-size: 12px;
+  margin-top: ($line-height-computed / 2);
+}
+
 .lead {
   margin-bottom: $line-height-computed;
   font-size: floor(($font-size-base * 1.15));
@@ -15,6 +119,8 @@
     font-size: ($font-size-base * 1.5);
   }
 }
+
+
 
 
 // Emphasis & misc
@@ -77,10 +183,13 @@ mark,
 
 @include bg-variant('.bg-danger', $state-danger-bg);
 
+
+
+
 // Lists
 // -------------------------
 
-// Unordered and Ordered lists
+// Lists
 ul,
 ol {
   margin-top: 0;
@@ -89,6 +198,10 @@ ol {
   ol {
     margin-bottom: 0;
   }
+}
+
+ol ol {
+  list-style-type: lower-alpha;
 }
 
 // List options
@@ -102,7 +215,6 @@ ol {
 .list-unstyled {
   @include list-unstyled;
 }
-
 
 // Inline turns list items into inline-block
 .list-inline {
@@ -156,10 +268,6 @@ dd {
   }
 }
 
-
-// Misc
-// -------------------------
-
 // Abbreviations and acronyms
 abbr[title],
 // Add data-* attribute to help out our tooltip plugin, per https://github.com/twbs/bootstrap/issues/5257
@@ -170,55 +278,6 @@ abbr[data-original-title] {
 .initialism {
   font-size: 90%;
   @extend .text-uppercase;
-}
-
-// Blockquotes
-blockquote {
-
-  p,
-  ul,
-  ol {
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  // Note: Deprecated small and .small as of v3.1.0
-  // Context: https://github.com/twbs/bootstrap/issues/11660
-  footer,
-  small,
-  .small {
-    display: block;
-    font-size: 80%; // back to default font-size
-    line-height: $line-height-base;
-    color: $blockquote-small-color;
-
-    &:before {
-      content: '\2014 \00A0'; // em dash, nbsp
-    }
-  }
-}
-
-// Opposite alignment of blockquote
-//
-// Heads up: `blockquote.pull-right` has been deprecated as of v3.1.0.
-.blockquote-reverse,
-blockquote.pull-right {
-  padding-right: 15px;
-  padding-left: 0;
-  border-right: 5px solid $blockquote-border-color;
-  border-left: 0;
-  text-align: right;
-
-  // Account for citation
-  footer,
-  small,
-  .small {
-    &:before { content: ''; }
-    &:after {
-      content: '\00A0 \2014'; // nbsp, em dash
-    }
-  }
 }
 
 // Addresses

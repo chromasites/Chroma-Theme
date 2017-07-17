@@ -1,7 +1,8 @@
 /* Editor Style */
 
+// WYSIWYG Editor Styles
 body#tinymce.wp-editor{
-	@import "core/site-variables";
+	@import "theme";
 	@import "core/bootstrap-resources";
 	@import "core/mixins/mixins-master";
 
@@ -16,6 +17,10 @@ body#tinymce.wp-editor{
 
 	img {
 		max-width: 100%;
+	}
+
+	img[data-wp-more] {
+		height: 16px !important;
 	}
 
 	a {
@@ -44,6 +49,6 @@ body#tinymce.wp-editor{
 	@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/grid";
 	@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/tables";
 	@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
-	@import "core/type";
 	@import "typography";
+	@import "wp-media";
 }

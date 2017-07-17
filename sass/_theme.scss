@@ -1,6 +1,7 @@
 // Theme Variables
 // DO NOT INCLUDE CSS
 
+
 // ======== Brand Colors ======== //
 $brand-primary:         #337ab7;
 $brand-success:         #5cb85c;
@@ -21,9 +22,16 @@ $state-danger-text:              #a94442;
 $state-danger-bg:                #f2dede;
 
 
+
+
 // ======== Body ======== //
 $body-bg:               #fff;
 $text-color:            #333;
+
+
+$content-margin-top: 30px;
+$content-margin-bottom: $content-margin-top;
+
 
 
 // ======== Fonts ======== //
@@ -38,6 +46,8 @@ $font-family-base:        $font-family-sans-serif; // $font-family-serif
 $headings-font-family:    inherit;
 
 
+
+
 // ======== Links ======== //
 $link-color:            $brand-primary;
 $link-hover-decoration: underline; // underline, none
@@ -48,7 +58,7 @@ $link-hover-decoration: underline; // underline, none
 // ======== Navbar ======== //
 $navbar-background-color:          #fafafa; // create gradients in core/_navbar.scss
 
-$navbar-border-color:              #ddd;
+$navbar-border-color:              #eee;
 $navbar-border-radius:             0;
 
 $navbar-brand-color:               #333;
@@ -65,17 +75,20 @@ $navbar-link-lg-horizontal-padding:   30px;
 $navbar-margin-bottom:             0;
 
 // Navbar button styles
-$navbar-link-md-right-margin:    5px;
-$navbar-link-md-left-margin:     0px;
-$navbar-link-lg-right-margin:    10px;
-$navbar-link-lg-left-margin:     0px;
+$navbar-link-md-right-margin:    0;
+$navbar-link-md-left-margin:     0;
+$navbar-link-lg-right-margin:    0;
+$navbar-link-lg-left-margin:     0;
 
-$navbar-link-top-margin:         5px;
+$navbar-link-top-margin:         0;
 $navbar-link-bottom-margin:      $navbar-link-top-margin;
 $navbar-height:                  50px;
-$navbar-link-border-radius:      2px;
+$navbar-link-border-radius:      0;
 
 $navbar-total-height: $navbar-height + $navbar-link-top-margin + $navbar-link-bottom-margin + 2;
+
+// Mobile Menu Breakpoint
+$grid-float-breakpoint: 1200px; // 768px, 992px, 1200px
 
 
 
