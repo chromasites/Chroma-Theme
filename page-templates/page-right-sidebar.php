@@ -1,20 +1,20 @@
 <?php
 /**
- * Template Name: No Sidebar
+ * Template Name: Right Sidebar
  *
  * @package Chroma_Theme
  */
 
 get_header(); ?>
 
-<div id="page" class="no-sidebar <?php _the_field('content_column_width'); echo ' '; _the_field('content_column_align'); ?>" >
+<div id="page" class="right-sidebar">
 
-	<?php get_template_part('template-parts/titles', 'page'); ?>
+	<?php get_template_part('template-parts/page', 'header'); ?>
 
 	<div class="container">
 		<div class="row">
 		
-			<main id="main" class="site-main" role="main">
+			<main id="main" class="site-main col-md-8" role="main">
 
 				<?php
 				while ( have_posts() ) : the_post();
@@ -25,6 +25,10 @@ get_header(); ?>
 				?>
 
 			</main><!-- #main -->
+			
+			<div id="sidebar" class="col-md-4">
+				<?php get_sidebar(); ?>
+			</div>
 
 		</div><!-- .row -->
 	</div>

@@ -1,0 +1,110 @@
+// WordPress image alignment
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+.aligncenter {
+	clear: both;
+	@include center-block;
+}
+
+// Fit embeds and iframes in content
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+// Fit all images in content
+img {
+	@include img-responsive;
+}
+
+// WordPress emojis and smileys
+img.wp-smiley,
+img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 .07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}
+
+// WordPress Galleries
+.gallery {
+	margin-bottom: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+
+	.gallery-columns-2 & {
+		max-width: 50%;
+	}
+
+	.gallery-columns-3 & {
+		max-width: 33.33%;
+	}
+
+	.gallery-columns-4 & {
+		max-width: 25%;
+	}
+
+	.gallery-columns-5 & {
+		max-width: 20%;
+	}
+
+	.gallery-columns-6 & {
+		max-width: 16.66%;
+	}
+
+	.gallery-columns-7 & {
+		max-width: 14.28%;
+	}
+
+	.gallery-columns-8 & {
+		max-width: 12.5%;
+	}
+
+	.gallery-columns-9 & {
+		max-width: 11.11%;
+	}
+}
+
+// WordPress Captions
+.gallery-caption {
+	display: block;
+}
+
+.wp-caption {
+	margin-bottom: $line-height-computed;
+	max-width: 100%;
+	text-align: center;
+	font-size: .9;
+	color: lighten($text-color, 30%);
+
+	img[class*="wp-image-"] {
+		@include center-block;
+	}
+
+	.wp-caption-text {
+		margin: ($line-height-computed / 2) 0;
+	}
+}
+
+.wp-caption-text {
+	text-align: center;
+}

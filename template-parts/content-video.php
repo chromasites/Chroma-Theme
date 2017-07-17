@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying posts.
+ * Template part for displaying Video posts.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -33,6 +33,26 @@
 	<div class="entry-content">
 		
 		<?php
+
+		// Embed Video Player
+		$videoframe = _get_field('video_url');
+		$aspectratio = _get_field('aspect_ratio');
+
+		preg_match('/src="(.+?)"/', $videoframe, $matches);
+		$src = $matches[1];
+
+		$params = array(
+		    'controls'    => 0,
+		    'hd'        => 1,
+		    'autohide'    => 1
+		);
+
+		$new_src = add_query_arg($params, $src);
+		$videoframe = str_replace($src, $new_src, $videoframe);
+		$attributes = 'frameborder="0" class="embed-responsive-item"';
+		$videoframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $videoframe);
+
+		echo '<div id="featured-video" class="embed-responsive embed-responsive-' . $aspectratio . '">' . $videoframe . '</div>';
 
 		the_content( sprintf(
 			/* translators: %s: Name of current post. */

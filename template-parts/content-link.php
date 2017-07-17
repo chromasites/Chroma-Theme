@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying posts.
+ * Template part for posts linking to other websites.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -15,11 +15,9 @@
 		
 		<?php
 
-		if ( is_single() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
+		$link_url = _get_field('external_link_url');
+
+		the_title( '<h2 class="entry-title"><a target="_blank" href="' . esc_url( $link_url ) . '" rel="bookmark">', '</a></h2>' );
 
 		if ( 'post' === get_post_type() ) : 
 			get_template_part( 'template-parts/post-archive', 'meta' );
@@ -40,10 +38,7 @@
 			the_title( '<span class="screen-reader-text">"', '"</span>', false )
 		) );
 
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'chroma' ),
-			'after'  => '</div>',
-		) );
+		echo '<p><a target="_blank" href="' . esc_url( $link_url ) . '" rel="bookmark">' . $link_url . '</a></p>';
 
 		?>
 
