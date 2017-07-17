@@ -7,11 +7,12 @@
 ?>
 
 <header id="header" class="site-header centered-header-layout" role="banner">
+
 	<div class="container">
 		<div class="row">
 
 			<div class="site-logo col-sm-6 col-sm-push-3 col-md-4 col-md-push-4">
-				<?php get_template_part('template-parts/header', 'logo'); ?>
+				<?php chroma_header_logo(); ?>
 			</div>
 
 			<div class="layout-break visible-sm-block clearfix"></div>

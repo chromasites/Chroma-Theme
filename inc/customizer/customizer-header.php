@@ -5,24 +5,25 @@
  * @package Chroma_Theme
  */
 
+
 // Add header section.
 $wp_customize->add_section( 'header_customizer' , array(
     'title'      => __( 'Header', 'chroma' ),
     'priority'   => 10,
 ) );
 
-// Upload logo.
-$wp_customize->add_setting('website_logo');
+// Upload Image Logo
+$wp_customize->add_setting('brand_logo');
 $wp_customize->add_control(
-   new WP_Customize_Image_Control(
-       $wp_customize,
-       'website_logo',
-       array(
-           'label'      => __( 'Upload a Logo', 'chroma' ),
-           'section'    => 'header_customizer',
-           'settings'   => 'website_logo'
-       )
-   )
+	new WP_Customize_Media_Control(
+		$wp_customize,
+		'brand_logo', array(
+		    'section' => 'header_customizer',
+		    'label' => __( 'Upload Logo', 'chroma' ),
+		    'mime_type' => 'image',
+		    'settings'   => 'brand_logo'
+		)
+	)
 );
 
 // Header layout style.
@@ -35,7 +36,7 @@ $wp_customize->add_control(
 	    'section'	=> 'header_customizer',
 	    'settings'	=> 'header_layout',
 	    'choices'	=> array(
-	        'standard'	=> 'Standard',
+	        ''	=> 'Default',
 	        'centered'	=> 'Centered',
 	        'float'		=> 'Float',
 	        'compact'	=> 'Compact',

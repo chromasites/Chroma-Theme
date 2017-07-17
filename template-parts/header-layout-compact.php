@@ -10,7 +10,7 @@
 
 	<nav class="navbar chroma-navbar" role="navigation">
 		<div class="container">
-			<?php get_template_part( 'template-parts/navigation', 'primary' ); ?>
+			<?php chroma_header_logo(); ?>
 		</div>
 	</nav>
 

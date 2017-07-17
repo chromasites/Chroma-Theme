@@ -7,11 +7,12 @@
 ?>
 
 <header id="header" class="site-header float-header-layout" role="banner">
+
 	<div class="container">
 		<div class="row">
 
 			<div class="site-logo col-sm-4">
-				<?php get_template_part('template-parts/header', 'logo'); ?>
+				<?php chroma_header_logo(); ?>
 			</div>
 
 			<div class="header-space col-sm-8">
@@ -36,4 +37,5 @@
 
 		</div>
 	</div>	
+	
 </header><!-- #header -->
