@@ -7,9 +7,9 @@
 
 get_header(); ?>
 
-<div id="blog-archive" class="page-section right-sidebar">
+<div id="blog-archive" class="right-sidebar">
 
-	<?php get_template_part('template-parts/titles', 'archive'); ?>
+	<?php get_template_part('template-parts/post-archive', 'header'); ?>
 
 	<div class="container">
 		<div class="row">

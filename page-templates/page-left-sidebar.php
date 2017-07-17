@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Lefthand Sidebar
+ * Template Name: Left Sidebar
  *
  * @package Chroma_Theme
  */
@@ -9,7 +9,7 @@ get_header(); ?>
 
 <div id="page" class="left-sidebar">
 
-	<?php get_template_part('template-parts/titles', 'page'); ?>
+	<?php get_template_part('template-parts/page', 'header'); ?>
 
 	<div class="container">
 		<div class="row">

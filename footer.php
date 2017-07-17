@@ -9,31 +9,23 @@
 
 </div><!-- #main -->
 
-<?php if( get_theme_mod( 'display_superfooter' ) == 'checked') {
-	get_template_part( 'template-parts/footer', 'superfooter' );
-} ?>
+<?php 
 
-<?php get_template_part( 'template-parts/footer', 'layout' ); ?>
+get_template_part( 'template-parts/footer', 'superfooter' );
+
+get_template_part( 'template-parts/footer', 'layout' );
+
+?>
 
 </div><!-- #page-wrapper -->
 
-<div id="subfooter" class="container-fluid">
-	<div class="copyright">
+<?php
 
-		<?php get_template_part( 'template-parts/footer', 'copyright' ); ?>
+get_template_part( 'template-parts/footer', 'subfooter' );
 
-		<?php if( get_theme_mod( 'hide_footer_loginlink' ) != 'checked') {
-			echo '<span class="login">';
-			wp_loginout($_SERVER['REQUEST_URI']);
-			echo '</span>';
-		} ?>
+wp_footer();
 
-	</div>
-</div>
-
-<?php chroma_designer_branding('dark'); // 'dark' OR 'light' ?>
-
-<?php wp_footer(); ?>
+?>
 
 <!--<?php echo get_num_queries(); ?>q/<?php timer_stop(1); ?>s-->
 

@@ -1,0 +1,161 @@
+// Default navbar
+.chroma-navbar {
+  background-color: $navbar-background-color;
+  // @include gradient-vertical($start-color: #fafafa,  $end-color: #ddd);
+  border-color: $navbar-border-color;
+
+  .navbar-brand {
+    color: $navbar-brand-color;
+    
+    &:hover,
+    &:focus {
+      color: $navbar-brand-hover-color;
+    }
+  }
+
+  .navbar-text {
+    color: $navbar-default-color;
+  }
+
+  .navbar-nav {
+    > li > a {
+      color: $navbar-link-color;
+      background-color: $navbar-link-bg;
+      border-radius: $navbar-link-border-radius;
+
+      &:hover,
+      &:focus {
+        color: $navbar-link-hover-color;
+        background-color: $navbar-link-hover-bg;
+      }
+
+      // Specs for buttons
+      @media (min-width: $screen-md-min) {
+        padding-right: $navbar-link-md-horizontal-padding;
+        padding-left: $navbar-link-md-horizontal-padding;
+        margin-top: $navbar-link-top-margin;
+        margin-right: $navbar-link-md-right-margin;
+        margin-bottom: $navbar-link-bottom-margin;
+        margin-left: $navbar-link-md-left-margin;
+      }
+
+      @media (min-width: $screen-lg-min) {
+        padding-right: $navbar-link-lg-horizontal-padding;
+        padding-left: $navbar-link-lg-horizontal-padding;
+        margin-right: $navbar-link-lg-right-margin;
+        margin-left: $navbar-link-lg-left-margin
+      }
+    }
+
+    /*> .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $navbar-default-link-active-color;
+        background-color: $navbar-default-link-active-bg;
+      }
+    }
+
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $navbar-default-link-disabled-color;
+        background-color: $navbar-default-link-disabled-bg;
+      }
+    }*/
+  }
+
+  .navbar-toggle {
+    border-color: $navbar-brand-color;
+
+
+    .icon-bar {
+      background-color: $navbar-brand-color;
+    }
+    
+    &:hover,
+    &:focus {
+      background-color: transparent;
+
+      .icon-bar {
+        background-color: $navbar-brand-hover-color;
+      }
+    }
+  }
+
+  .navbar-collapse,
+  .navbar-form {
+    border-color: darken($navbar-background-color, 10%);
+  }
+
+  // Dropdown menu items
+  .navbar-nav {
+    // Remove background color from open dropdown
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: $navbar-default-link-active-bg;
+        color: $navbar-default-link-active-color;
+      }
+    }
+
+    @media (max-width: $grid-float-breakpoint-max) {
+      // Dropdowns get custom display when collapsed
+      .open .dropdown-menu {
+        > li > a {
+          color: $navbar-default-link-color;
+          &:hover,
+          &:focus {
+            color: $navbar-default-link-hover-color;
+            background-color: $navbar-default-link-hover-bg;
+          }
+        }
+        > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            color: $navbar-default-link-active-color;
+            background-color: $navbar-default-link-active-bg;
+          }
+        }
+        > .disabled > a {
+          &,
+          &:hover,
+          &:focus {
+            color: $navbar-default-link-disabled-color;
+            background-color: $navbar-default-link-disabled-bg;
+          }
+        }
+      }
+    }
+  }
+
+
+  // Links in navbars
+  //
+  // Add a class to ensure links outside the navbar nav are colored correctly.
+
+  .navbar-link {
+    color: $navbar-default-link-color;
+    &:hover {
+      color: $navbar-default-link-hover-color;
+    }
+  }
+
+  .btn-link {
+    color: $navbar-default-link-color;
+    &:hover,
+    &:focus {
+      color: $navbar-default-link-hover-color;
+    }
+    &[disabled],
+    fieldset[disabled] & {
+      &:hover,
+      &:focus {
+        color: $navbar-default-link-disabled-color;
+      }
+    }
+  }
+}

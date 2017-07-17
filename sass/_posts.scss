@@ -1,0 +1,112 @@
+// Post Archives
+.hfeed {
+
+	.hentry {
+		margin: 60px 0;
+		
+		/* Boxed entries 
+		background-color: #eee;
+		padding: 15px;
+		border-radius: 4px;
+		*/
+	}
+	.hentry:first-child {
+		margin-top: $content-margin-top;
+	}
+	.hentry:last-child {
+		margin-bottom: $content-margin-bottom;
+	}
+
+	.entry-title,
+	.entry-meta,
+	.entry-excerpt,
+	.entry-more-link {
+		margin-top: 15px;
+		margin-bottom: 15px;
+
+		&:first-child {
+			margin-top: 0
+		}
+	}
+
+	.entry-excerpt p {
+		margin: 0;
+	}
+
+	.center-content {
+
+		.entry-title,
+		.entry-meta,
+		.entry-excerpt,
+		.entry-more-link {
+			text-align: center;
+			max-width: 750px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+	}
+
+	.entry-meta, {
+
+		&,
+		a {
+			color: #777;
+			text-decoration: none;
+		}
+
+		a:hover,
+		a:focus {
+			color: #222;
+		}
+	}
+
+	.entry-date.updated {
+		display: none;
+	}
+
+	.featured-image {	
+		position: relative;
+
+		img {
+			border-radius: 4px;
+		}
+
+		.video-icon {
+			font-size: 24px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			
+			.fa-circle {
+				color: #fff;
+			}
+			.fa-youtube-play {
+				color: #222;
+			}
+		}
+
+		a:hover .video-icon .fa-youtube-play {
+			color: #e62117;
+		}
+	}
+}
+
+
+// Post Archive Layouts
+.one-col-imgleft {
+
+}
+
+.one-col-imgright {
+
+}
+
+.one-col-imgmiddle {
+
+}
+
+.one-col-imgtop {
+
+}

@@ -14,7 +14,7 @@ if( function_exists( 'get_field' ) && have_rows('social_icons', 'option') ): ?>
 		$soc_object = get_sub_field_object('social_icon_type');
 		$soc_value = get_sub_field('social_icon_type');
 		$soc_title = $soc_object['choices'][ $soc_value ];
-		$soc_fa_class = 'fa fa-' . get_sub_field('social_icon_type');
+		$soc_fa_class = get_sub_field('social_icon_type');
 
 		if ( get_sub_field('social_icon_target') ) { $soc_target = ' target="_blank"'; }
 

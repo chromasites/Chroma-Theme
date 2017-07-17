@@ -1,17 +1,17 @@
 <?php
 /**
- * Template Name: Custom Layout
+ * Template Name: Custom (Page Builder)
  *
  * @package Chroma_Theme
  */
 
 get_header(); ?>
 
-<div id="page" class="no-sidebar custom-layout" >
+<div id="page" class="custom-layout" >
 
-	<?php get_template_part('template-parts/titles', 'page'); ?>
+	<?php get_template_part('template-parts/page', 'header'); ?>
 		
-	<main id="main" class="site-main" role="main">
+	<main id="main" class="container site-main" role="main">
 
 		<?php
 		while ( have_posts() ) : the_post();

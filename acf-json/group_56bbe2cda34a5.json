@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_56bbe35a79fb3",
-            "label": "Column Width",
+            "label": "Width",
             "name": "content_column_width",
             "type": "select",
             "instructions": "",
@@ -18,23 +18,22 @@
             "choices": {
                 "content-width-narrow": "Narrow",
                 "content-width-normal": "Normal",
-                "content-width-full": "Full"
+                "content-width-wide": "Wide"
             },
-            "default_value": {
-                "content-width-normal": "content-width-normal"
-            },
+            "default_value": [
+                "content-width-normal"
+            ],
             "allow_null": 0,
             "multiple": 0,
             "ui": 0,
             "ajax": 0,
-            "placeholder": "",
-            "disabled": 0,
-            "readonly": 0
+            "return_format": "value",
+            "placeholder": ""
         },
         {
             "key": "field_56bbe3f379fb4",
-            "label": "Column Alignment",
-            "name": "content_column_align",
+            "label": "Position",
+            "name": "content_column_position",
             "type": "select",
             "instructions": "",
             "required": 0,
@@ -43,7 +42,7 @@
                     {
                         "field": "field_56bbe35a79fb3",
                         "operator": "!=",
-                        "value": "content-width-full"
+                        "value": "content-width-wide"
                     }
                 ]
             ],
@@ -53,19 +52,19 @@
                 "id": ""
             },
             "choices": {
-                "content-align-center": "Center",
-                "content-align-left": "Left"
+                "content-position-left": "Left",
+                "content-position-center": "Center",
+                "content-position-right": "Right"
             },
-            "default_value": {
-                "content-align-center": "content-align-center"
-            },
+            "default_value": [
+                "content-position-center"
+            ],
             "allow_null": 0,
             "multiple": 0,
             "ui": 0,
             "ajax": 0,
-            "placeholder": "",
-            "disabled": 0,
-            "readonly": 0
+            "return_format": "value",
+            "placeholder": ""
         }
     ],
     "location": [
@@ -73,11 +72,11 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "page-templates\/page-no-sidebar.php"
+                "value": "default"
             }
         ]
     ],
-    "menu_order": 10,
+    "menu_order": 3,
     "position": "side",
     "style": "default",
     "label_placement": "top",
@@ -85,5 +84,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1460476149
+    "modified": 1499745165
 }

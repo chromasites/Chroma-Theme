@@ -1,20 +1,20 @@
 <?php
 /**
- * The template for displaying all pages.
+ * Default page template
  *
  * @package Chroma_Theme
  */
 
 get_header(); ?>
 
-<div id="page" class="page-section right-sidebar">
+<div id="page" class="<?php _the_field('content_column_width'); ?> <?php _the_field('content_column_position'); ?>" >
 
-	<?php get_template_part('template-parts/titles', 'page'); ?>
+	<?php get_template_part('template-parts/page', 'header'); ?>
 
 	<div class="container">
 		<div class="row">
 		
-			<main id="main" class="site-main col-md-8" role="main">
+			<main id="main" class="site-main" role="main">
 
 				<?php
 				while ( have_posts() ) : the_post();
@@ -25,10 +25,6 @@ get_header(); ?>
 				?>
 
 			</main><!-- #main -->
-			
-			<div id="sidebar" class="col-md-4">
-				<?php get_sidebar(); ?>
-			</div>
 
 		</div><!-- .row -->
 	</div>

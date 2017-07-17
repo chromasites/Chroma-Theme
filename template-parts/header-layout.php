@@ -6,26 +6,30 @@
  */
 ?>
 
-<?php
-	if (get_theme_mod('header_layout') == 'compact') {
+<header id="header" class="site-header standard-header-layout" role="banner">
 
-		get_template_part( 'template-parts/header-layout', 'compact' );
+	<div class="container">
+		<div class="row">
 
-	} elseif (get_theme_mod('header_layout') == 'centered') {
+			<div class="site-logo col-md-4">
+				<?php chroma_header_logo(); ?>
+			</div>
 
-		get_template_part( 'template-parts/header-layout', 'centered' );
+			<div class="site-info site-info-1 col-sm-6 col-md-4">
+				<?php get_template_part('template-parts/header', 'siteinfo-1'); ?>
+			</div>
 
-	} elseif (get_theme_mod('header_layout') == 'float') {
+			<div class="site-info site-info-2 col-sm-6 col-md-4">
+				<?php get_template_part('template-parts/header', 'siteinfo-2'); ?>
+			</div>
 
-		get_template_part( 'template-parts/header-layout', 'float' );
+		</div>
+	</div>
 
-	} elseif (get_theme_mod('header_layout') == 'standard') {
-
-		get_template_part( 'template-parts/header-layout', 'standard' );
-
-	} else { // Set standard as default layout
-
-		get_template_part( 'template-parts/header-layout', 'standard' );
-
-	}
-?>
+	<nav class="navbar chroma-navbar" role="navigation">
+		<div class="container">
+			<?php get_template_part( 'template-parts/navigation', 'primary' ); ?>
+		</div>
+	</nav>
+	
+</header><!-- #header -->

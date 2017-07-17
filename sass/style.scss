@@ -1,0 +1,118 @@
+/*!
+Theme Name: Chroma Theme
+Theme URI: http://www.chromasites.com
+Author: Chroma Sites
+Author URI: http://www.chromasites.com
+Description: A Chroma Sites Web Design
+Version: 4.2.0
+Text Domain: chroma
+
+(C) 2012-2016 Chroma Sites & Coldfire Inc. All rights reserved.
+
+Chroma Theme is based on Underscores (C) 2012-2015 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+
+/*!
+>>> TABLE OF CONTENTS:
+«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»
+# Normalize
+# Bootstrap Custom
+# WordPress
+# Typography
+# Layout
+# Header
+# Navigation
+# Social Media
+# Sidebar
+# Footer
+# Blog
+# Pages
+# Forms
+# Chroma Sites
+# Modules
+«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
+
+//Load varaibles and mixins first
+@import "theme";
+@import "core/bootstrap-resources";
+@import "core/mixins/mixins-master";
+
+/*
+# Bootstrap Custom
+«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
+@import "core/bootstrap-classes";
+@import "core/bootstrap-components";
+
+/*
+# WordPress
+«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
+@import "wp-media";
+@import "helper-classes";
+
+/*
+# Typography
+«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
+@import "typography";
+
+/*
+# Layout
+«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
+@import "letterhead";
+@import "core/page-layouts";
+
+/*
+# Header
+«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
+@import "header";
+@import "promo";
+
+/*
+# Navigation
+«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
+@import "core/navbar-presets";
+@import "navbar";
+
+/*
+# Footer
+«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
+@import "footer";
+
+/*
+# Social Media
+«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
+@import "social-media";
+
+/*
+# Blog
+«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
+@import "posts";
+@import "core/post-navigation";
+@import "core/post-layouts";
+@import "comments";
+
+
+/*
+# Pages
+«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
+@import "page-content";
+
+/*
+# Search
+«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
+@import "search";
+
+/*
+# Forms
+«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
+@import "forms";
+
+/*
+# WooCommerce Styles
+«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
+// @import "woocommerce";
+
+/*
+# Chroma Sites
+«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*«»*/
+

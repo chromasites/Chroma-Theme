@@ -28,7 +28,7 @@ if ( ! function_exists( 'chroma_setup' ) ) :
 		add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption', ) );
 
 		// Post formats.
-		add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link', ) );
+		add_theme_support( 'post-formats', array( 'video', 'link', ) );
 
 	}
 endif;
@@ -64,12 +64,30 @@ function chroma_widgets_init() {
 		'before_title'  => '<h4 class="widget-title">',
 		'after_title'   => '</h4>',
 	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Header Block 1', 'chroma' ),
+		'id'            => 'site-info-1',
+		'description'   => 'These widgets appear in the header. Style with .site-info-1.',
+		'before_widget' => '<section id="%1$s" class="header-widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h4 class="header-widget-title">',
+		'after_title'   => '</h4>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Header Block 2', 'chroma' ),
+		'id'            => 'site-info-2',
+		'description'   => 'These widgets appear in the header. Style with .site-info-2.',
+		'before_widget' => '<section id="%1$s" class="header-widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h4 class="header-widget-title">',
+		'after_title'   => '</h4>',
+	) );
 }
 add_action( 'widgets_init', 'chroma_widgets_init' );
 
 
 // Set content width for WordPress embeds.
 function chroma_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'chroma_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'chroma_content_width', 750 );
 }
 add_action( 'after_setup_theme', 'chroma_content_width', 0 );

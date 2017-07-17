@@ -1,10 +1,10 @@
 {
     "key": "group_56bbd8d32ee48",
-    "title": "Page Headline",
+    "title": "Page Display Settings",
     "fields": [
         {
             "key": "field_56bbd93c28b3c",
-            "label": "Headline Display",
+            "label": "Headline",
             "name": "headline_display",
             "type": "select",
             "instructions": "",
@@ -16,20 +16,16 @@
                 "id": ""
             },
             "choices": {
-                "default": "Page Title",
-                "alternate": "Alternate Headline",
-                "none": "Do not display a title"
+                "alternate": "Alternate headline",
+                "none": "None"
             },
-            "default_value": {
-                "default": "default"
-            },
-            "allow_null": 0,
+            "default_value": [],
+            "allow_null": 1,
             "multiple": 0,
             "ui": 0,
             "ajax": 0,
-            "placeholder": "",
-            "disabled": 0,
-            "readonly": 0
+            "return_format": "value",
+            "placeholder": ""
         },
         {
             "key": "field_56bbd9e428b3e",
@@ -70,15 +66,18 @@
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
-                "class": "",
+                "class": "hide-label",
                 "id": ""
             },
             "message": "Include Subhead",
-            "default_value": 0
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
         },
         {
             "key": "field_56bbdea659e2e",
-            "label": "Headline Subhead",
+            "label": "Subheadline",
             "name": "headline_subhead",
             "type": "textarea",
             "instructions": "",
@@ -101,9 +100,77 @@
             "placeholder": "",
             "maxlength": "",
             "rows": 2,
-            "new_lines": "",
-            "readonly": 0,
-            "disabled": 0
+            "new_lines": ""
+        },
+        {
+            "key": "field_5963f51e9a038",
+            "label": "Headline Alignment",
+            "name": "headline_align",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "text-left": "Left",
+                "text-center": "Center",
+                "text-right": "Right"
+            },
+            "default_value": [],
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_596116f021427",
+            "label": "Featured Image Display",
+            "name": "featured_image_display",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "fullwidth": "Full width",
+                "contentwidth": "Content width"
+            },
+            "default_value": [],
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5963fa02d3460",
+            "label": "Superfooter Display",
+            "name": "superfooter_display",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hide-label",
+                "id": ""
+            },
+            "message": "Hide Superfooter",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
         }
     ],
     "location": [
@@ -115,7 +182,7 @@
             }
         ]
     ],
-    "menu_order": 0,
+    "menu_order": 5,
     "position": "side",
     "style": "default",
     "label_placement": "top",
@@ -123,5 +190,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1456792280
+    "modified": 1500250530
 }

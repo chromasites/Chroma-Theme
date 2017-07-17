@@ -1,0 +1,105 @@
+// Theme Variables
+// DO NOT INCLUDE CSS
+
+
+// ======== Brand Colors ======== //
+$brand-primary:         #337ab7;
+$brand-success:         #5cb85c;
+$brand-info:            #5bc0de;
+$brand-warning:         #f0ad4e;
+$brand-danger:          #d9534f;
+
+$state-success-text:             #3c763d;
+$state-success-bg:               #dff0d8;
+
+$state-info-text:                #31708f;
+$state-info-bg:                  #d9edf7;
+
+$state-warning-text:             #8a6d3b;
+$state-warning-bg:               #fcf8e3;
+
+$state-danger-text:              #a94442;
+$state-danger-bg:                #f2dede;
+
+
+
+
+// ======== Body ======== //
+$body-bg:               #fff;
+$text-color:            #333;
+
+
+$content-margin-top: 30px;
+$content-margin-bottom: $content-margin-top;
+
+
+
+// ======== Fonts ======== //
+// Add new Google fonts in inc/functions/assets.php
+$font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif;
+
+$font-size-base:          16px;
+$line-height-base:        24/14;
+
+$font-family-base:        $font-family-sans-serif; // $font-family-serif
+$headings-font-family:    inherit;
+
+
+
+
+// ======== Links ======== //
+$link-color:            $brand-primary;
+$link-hover-decoration: underline; // underline, none
+
+
+
+
+// ======== Navbar ======== //
+$navbar-background-color:          #fafafa; // create gradients in core/_navbar.scss
+
+$navbar-border-color:              #eee;
+$navbar-border-radius:             0;
+
+$navbar-brand-color:               #333;
+$navbar-brand-hover-color:         #111;
+
+$navbar-link-color:                $brand-primary;
+$navbar-link-bg:                   transparent;
+$navbar-link-hover-color:          #fff;
+$navbar-link-hover-bg:             $brand-primary;
+
+$navbar-link-md-horizontal-padding:   20px;
+$navbar-link-lg-horizontal-padding:   30px;
+
+$navbar-margin-bottom:             0;
+
+// Navbar button styles
+$navbar-link-md-right-margin:    0;
+$navbar-link-md-left-margin:     0;
+$navbar-link-lg-right-margin:    0;
+$navbar-link-lg-left-margin:     0;
+
+$navbar-link-top-margin:         0;
+$navbar-link-bottom-margin:      $navbar-link-top-margin;
+$navbar-height:                  50px;
+$navbar-link-border-radius:      0;
+
+$navbar-total-height: $navbar-height + $navbar-link-top-margin + $navbar-link-bottom-margin + 2;
+
+// Mobile Menu Breakpoint
+$grid-float-breakpoint: 1200px; // 768px, 992px, 1200px
+
+
+
+
+// ======== Footer ======== //
+$footer_bg: $body-bg;
+
+
+
+
+
+// ======== Modal Popups ======== //
+$modal-backdrop-bg:           #000;
+$modal-backdrop-opacity:      .5;

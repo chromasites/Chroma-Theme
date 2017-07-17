@@ -1,0 +1,54 @@
+// Pages
+
+// Content Margins
+#page:not(.custom-layout) .entry-content > {
+
+	*:first-child {
+		margin-top: $content-margin-top;
+	}
+	*:last-child {
+		margin-bottom: $content-margin-bottom;
+	}
+}
+
+
+// Featured Images
+
+.featured-image {
+
+	&.fullwidth {
+
+		img {
+			width: 100%;
+		}
+	}
+
+	&.contentwidth {
+		@extend .container;
+		padding-top: $content-margin-top;
+	}
+}
+
+
+// Sidebar
+
+#sidebar {
+	margin-top: $content-margin-top;
+	margin-bottom: $content-margin-bottom;
+}
+
+.sidebar-content {
+	padding: 0 0 0 30px;
+
+	.widget {
+		margin: 0 0 30px;
+
+		select {
+			max-width: 100%;
+		}
+	}
+
+	.widget-title {
+		margin-top: 0;
+	}
+}

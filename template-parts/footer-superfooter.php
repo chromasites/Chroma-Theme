@@ -5,6 +5,7 @@
  * @package Chroma_Theme
  */
 
+if ( get_theme_mod( 'display_superfooter' ) == 'checked' && !_get_field('superfooter_display') ) :
 ?>
 
 <div id="superfooter" class="">
@@ -26,3 +27,5 @@
 		</div>
 	</div>
 </div><!-- #promo-bar -->
+
+<? endif;
