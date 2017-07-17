@@ -5,6 +5,7 @@
  * @package Chroma_Theme
  */
 
+
 // Add layout section.
 $wp_customize->add_section( 'layout_customizer' , array(
     'title'      => __( 'Layout', 'chroma' ),

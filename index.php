@@ -5,58 +5,48 @@
  * @package Chroma_Theme
  */
 
-get_header(); ?>
+get_header();
 
-<div id="blog-index" class="page-section right-sidebar">
+$column_class = 'col-md-12 no-sidebar';
+if( get_theme_mod( 'blog_index_hide_sidebar' ) != 'checked') $column_class = 'col-md-8';
+if( get_theme_mod( 'blog_index_center_content' ) == 'checked') $center_class = 'center-content';
+$column_template = get_theme_mod( 'blog_index_layout' );
 
-	<header class="page-header">
-		<div class="container">
-			<h1 class="page-title">
-				<?php if ( is_home() && ! is_front_page() && get_option('page_for_posts') ) {
-					$blog_page_id = get_option('page_for_posts');
-					echo get_page($blog_page_id)->post_title;
-				} elseif ( is_post_type_archive() ) {
-					echo post_type_archive_title();
-				} else {
-					the_archive_title();
-				} ?>
-			</h1>
-		</div>
-	</header><!-- .page-header -->
+?>
+
+<div id="blog-index" class="blog">
+
+	<?php get_template_part('template-parts/post-archive', 'header'); ?>
 
 	<div class="container">
 		<div class="row">
 		
-			<main id="main" class="site-main col-md-8" role="main">
+			<main id="main" class="site-main <?php echo $column_class . ' ' . $column_template . ' ' . $center_class; ?>" role="main">
 
-			<?php
-			if ( have_posts() ) :
+				<?php
+				if ( have_posts() ) :
 
-				/* Start the Loop */
-				while ( have_posts() ) : the_post();
+					while ( have_posts() ) : the_post();
 
-					/*
-					 * Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'template-parts/content', get_post_format() );
+						get_template_part( 'template-parts/post-archive-layout', $column_template );
 
-				endwhile;
+					endwhile;
 
-				the_posts_navigation();
+					the_posts_navigation();
 
-			else :
-
-				get_template_part( 'template-parts/content', 'none' );
-
-			endif; ?>
+				endif; ?>
 
 			</main><!-- #main -->
 			
-			<div id="sidebar" class="col-md-4">
-				<?php get_sidebar(); ?>
-			</div>
+			<?php // Show or Hide Sidebar
+			if( get_theme_mod( 'blog_index_hide_sidebar' ) != 'checked') {
+
+				echo '<div id="sidebar" class="col-md-4">';
+					get_sidebar();
+				echo '</div>';
+
+			}
+			?>
 
 		</div><!-- .row -->
 	</div>

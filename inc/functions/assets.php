@@ -11,9 +11,9 @@ function chroma_scripts() {
 	wp_enqueue_style( 'chroma-style', get_stylesheet_uri() );
 	wp_enqueue_style(
 		'font-awesome',
-		'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css',
+		'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
 		array(),
-		'4.5.0'
+		'4.7.0'
 	);
 	wp_enqueue_style(
 		'google-fonts',
@@ -25,7 +25,7 @@ function chroma_scripts() {
 		'chromatheme',
 		get_template_directory_uri() . '/js/chromatheme.min.js',
 		['jquery'],
-		'4.0',
+		'4.1',
 		false
 	);
 
